@@ -1,0 +1,46 @@
+{
+  "ctjsVersion": "1.0.2",
+  "notes": "/* empty */",
+  "libs": {
+    "place": {
+      "gridX": 512,
+      "gridY": 512
+    },
+    "fittoscreen": {
+      "mode": "scaleFit"
+    },
+    "mouse": {},
+    "keyboard": {},
+    "keyboard.polyfill": {},
+    "sound.howler": {},
+    "akatemplate": {
+      "csscss": "body {\n    background: #000;\n}"
+    }
+  },
+  "skeletons": [],
+  "sounds": [],
+  "starting": 0,
+  "settings": {
+    "minifyhtmlcss": false,
+    "minifyjs": false,
+    "fps": 30,
+    "version": [
+      0,
+      0,
+      0
+    ],
+    "versionPostfix": "",
+    "export": {
+      "windows64": true,
+      "windows32": true,
+      "linux64": true,
+      "linux32": true,
+      "mac64": true,
+      "debug": false
+    },
+    "fileBasedStructure": true,
+    "title": "NOThInG",
+    "highDensity": false
+  },
+  "fonts": []
+}
