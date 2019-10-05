@@ -2,10 +2,6 @@
   "ctjsVersion": "1.0.2",
   "notes": "/* empty */",
   "libs": {
-    "place": {
-      "gridX": 512,
-      "gridY": 512
-    },
     "fittoscreen": {
       "mode": "scaleFit"
     },
@@ -38,9 +34,583 @@
       "mac64": true,
       "debug": false
     },
-    "fileBasedStructure": true,
+    "fileBasedStructure": false,
     "title": "NOThInG",
     "highDensity": false
   },
-  "fonts": []
+  "fonts": [],
+  "types": [
+    {
+      "name": "Player",
+      "depth": 0,
+      "oncreate": "console.log(TILE_SIZE);",
+      "onstep": "if(ct.actions.Up.pressed) {\n    this.y -= TILE_SIZE;\n} else if(ct.actions.Down.pressed) {\n    this.y += TILE_SIZE;\n} else if(ct.actions.Left.pressed) {\n    this.x -= TILE_SIZE;\n} else if(ct.actions.Right.pressed) {\n    this.x += TILE_SIZE;\n}\n\nthis.move();",
+      "ondraw": "",
+      "ondestroy": "",
+      "uid": "39aecb37-9206-412a-8fb3-0616a135ba89",
+      "texture": "6b3af325-22e6-4bb9-a9ac-b59f899b278d",
+      "extends": {}
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Room_f9e08010f566",
+      "width": 800,
+      "height": 600,
+      "backgrounds": [],
+      "copies": [],
+      "tiles": [
+        {
+          "depth": -10,
+          "tiles": []
+        }
+      ],
+      "uid": "97e034c3-3517-4bd1-a85a-f9e08010f566",
+      "thumbnail": "f9e08010f566",
+      "gridX": 64,
+      "gridY": 64,
+      "lastmod": 1570314967724,
+      "oncreate": "",
+      "ondraw": "",
+      "onleave": "",
+      "onstep": ""
+    },
+    {
+      "name": "Alexis",
+      "oncreate": "",
+      "onstep": "",
+      "ondraw": "",
+      "onleave": "",
+      "width": 1785,
+      "height": 1785,
+      "backgrounds": [],
+      "copies": [
+        {
+          "x": 952,
+          "y": 1547,
+          "uid": "39aecb37-9206-412a-8fb3-0616a135ba89"
+        }
+      ],
+      "tiles": [
+        {
+          "depth": -10,
+          "tiles": []
+        }
+      ],
+      "uid": "56bda02e-fe2b-401d-980b-37f7d1f49244",
+      "thumbnail": "37f7d1f49244",
+      "gridX": 119,
+      "gridY": 119,
+      "lastmod": 1570315285945
+    }
+  ],
+  "scripts": [
+    {
+      "name": "constants",
+      "code": "/* Use scripts to define frequent functions and import small libraries */\n\nconst TILE_SIZE = 119;"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Up",
+      "methods": [
+        {
+          "code": "keyboard.ArrowUp"
+        }
+      ]
+    },
+    {
+      "name": "Down",
+      "methods": [
+        {
+          "code": "keyboard.ArrowDown"
+        }
+      ]
+    },
+    {
+      "name": "Left",
+      "methods": [
+        {
+          "code": "keyboard.ArrowLeft"
+        }
+      ]
+    },
+    {
+      "name": "Right",
+      "methods": [
+        {
+          "code": "keyboard.ArrowRight"
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "box",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i93bf9411-f3c5-4968-ba6e-89265a57a289.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\box.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "93bf9411-f3c5-4968-ba6e-89265a57a289",
+      "lastmod": 1570312800539
+    },
+    {
+      "name": "character_back",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i3e9f44de-c324-4025-be3b-9ce7ccd2194f.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_back.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "3e9f44de-c324-4025-be3b-9ce7ccd2194f",
+      "lastmod": 1570312879086
+    },
+    {
+      "name": "character_front",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        60,
+        60
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 120,
+      "imgHeight": 120,
+      "width": 120,
+      "height": 120,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i6b3af325-22e6-4bb9-a9ac-b59f899b278d.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_front.png",
+      "shape": "rect",
+      "left": 60,
+      "right": 60,
+      "top": 60,
+      "bottom": 60,
+      "uid": "6b3af325-22e6-4bb9-a9ac-b59f899b278d",
+      "lastmod": 1570312882667
+    },
+    {
+      "name": "character_side",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i0cf60e4c-c3a6-4ea3-a4da-fc52b8a89ccd.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_side.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "0cf60e4c-c3a6-4ea3-a4da-fc52b8a89ccd",
+      "lastmod": 1570312885853
+    },
+    {
+      "name": "fiole",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "ica2ef17d-ce59-404d-8a69-a7bd3d2129a9.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\fiole.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "ca2ef17d-ce59-404d-8a69-a7bd3d2129a9",
+      "lastmod": 1570312890583
+    },
+    {
+      "name": "g",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i5703d2c0-1497-4cf0-b013-0694f60ff494.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\g.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "5703d2c0-1497-4cf0-b013-0694f60ff494",
+      "lastmod": 1570312893535
+    },
+    {
+      "name": "in",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        60,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 121,
+      "imgHeight": 119,
+      "width": 121,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i27e9b782-1be2-4a14-9e1c-d83584f72107.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\in.png",
+      "shape": "rect",
+      "left": 60,
+      "right": 61,
+      "top": 59,
+      "bottom": 60,
+      "uid": "27e9b782-1be2-4a14-9e1c-d83584f72107",
+      "lastmod": 1570312926503
+    },
+    {
+      "name": "n",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i8aa9032a-98df-4557-93d9-749cfbf016d3.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\n.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "8aa9032a-98df-4557-93d9-749cfbf016d3",
+      "lastmod": 1570312898757
+    },
+    {
+      "name": "o",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i74cceb34-b975-48b9-ba45-b622a30bac26.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\o.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "74cceb34-b975-48b9-ba45-b622a30bac26",
+      "lastmod": 1570312901674
+    },
+    {
+      "name": "porte_fermee",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "ida80b21c-f677-45f5-b2b4-82a8f15267fa.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\porte_fermee.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "da80b21c-f677-45f5-b2b4-82a8f15267fa",
+      "lastmod": 1570312904941
+    },
+    {
+      "name": "porte_ouverte",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i0b452cf8-9b0a-4a6d-9639-9e9f5dd5fa9b.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\porte_ouverte.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "0b452cf8-9b0a-4a6d-9639-9e9f5dd5fa9b",
+      "lastmod": 1570312907874
+    },
+    {
+      "name": "th",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        60,
+        60
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 120,
+      "imgHeight": 120,
+      "width": 120,
+      "height": 120,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i530ea4d9-8c6b-42da-95b9-a70523f92510.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\th.png",
+      "shape": "rect",
+      "left": 60,
+      "right": 60,
+      "top": 60,
+      "bottom": 60,
+      "uid": "530ea4d9-8c6b-42da-95b9-a70523f92510",
+      "lastmod": 1570312928333
+    },
+    {
+      "name": "wall",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i24f60f00-80e3-4121-bdf1-075589fea0b1.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\wall.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "24f60f00-80e3-4121-bdf1-075589fea0b1",
+      "lastmod": 1570312931265
+    },
+    {
+      "name": "wall_end",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\wall_end.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94",
+      "lastmod": 1570312933715
+    },
+    {
+      "name": "water_main",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "i848a129f-5674-469d-8657-15cb73d6fb0d.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\water_main.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "848a129f-5674-469d-8657-15cb73d6fb0d",
+      "lastmod": 1570312935995
+    },
+    {
+      "name": "water_middle",
+      "untill": 0,
+      "grid": [
+        1,
+        1
+      ],
+      "axis": [
+        59,
+        59
+      ],
+      "marginx": 0,
+      "marginy": 0,
+      "imgWidth": 119,
+      "imgHeight": 119,
+      "width": 119,
+      "height": 119,
+      "offx": 0,
+      "offy": 0,
+      "origname": "icf601109-377d-49cd-8e0f-cf3ea6fc93d1.png",
+      "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\water_middle.png",
+      "shape": "rect",
+      "left": 59,
+      "right": 60,
+      "top": 59,
+      "bottom": 60,
+      "uid": "cf601109-377d-49cd-8e0f-cf3ea6fc93d1",
+      "lastmod": 1570312939275
+    }
+  ],
+  "sound": [],
+  "styles": [],
+  "startroom": "56bda02e-fe2b-401d-980b-37f7d1f49244"
 }

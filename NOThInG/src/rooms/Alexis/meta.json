@@ -1,0 +1,24 @@
+{
+  "name": "Alexis",
+  "width": 800,
+  "height": 600,
+  "backgrounds": [],
+  "copies": [
+    {
+      "x": 357,
+      "y": 476,
+      "uid": "39aecb37-9206-412a-8fb3-0616a135ba89"
+    }
+  ],
+  "tiles": [
+    {
+      "depth": -10,
+      "tiles": []
+    }
+  ],
+  "uid": "56bda02e-fe2b-401d-980b-37f7d1f49244",
+  "thumbnail": "37f7d1f49244",
+  "gridX": 119,
+  "gridY": 119,
+  "lastmod": 1570315190907
+}
