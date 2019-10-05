@@ -1,0 +1,29 @@
+{
+  "name": "wall_end",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\wall_end.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94",
+  "lastmod": 1570312933715
+}

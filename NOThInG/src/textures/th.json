@@ -1,0 +1,29 @@
+{
+  "name": "th",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    60,
+    60
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 120,
+  "imgHeight": 120,
+  "width": 120,
+  "height": 120,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i530ea4d9-8c6b-42da-95b9-a70523f92510.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\th.png",
+  "shape": "rect",
+  "left": 60,
+  "right": 60,
+  "top": 60,
+  "bottom": 60,
+  "uid": "530ea4d9-8c6b-42da-95b9-a70523f92510",
+  "lastmod": 1570312928333
+}

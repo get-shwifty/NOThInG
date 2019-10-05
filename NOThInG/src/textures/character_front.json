@@ -1,0 +1,29 @@
+{
+  "name": "character_front",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    60,
+    60
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 120,
+  "imgHeight": 120,
+  "width": 120,
+  "height": 120,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i6b3af325-22e6-4bb9-a9ac-b59f899b278d.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_front.png",
+  "shape": "rect",
+  "left": 60,
+  "right": 60,
+  "top": 60,
+  "bottom": 60,
+  "uid": "6b3af325-22e6-4bb9-a9ac-b59f899b278d",
+  "lastmod": 1570312882667
+}

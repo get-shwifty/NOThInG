@@ -1,0 +1,29 @@
+{
+  "name": "fiole",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ica2ef17d-ce59-404d-8a69-a7bd3d2129a9.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\fiole.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "ca2ef17d-ce59-404d-8a69-a7bd3d2129a9",
+  "lastmod": 1570312890583
+}

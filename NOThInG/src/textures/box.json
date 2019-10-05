@@ -1,0 +1,29 @@
+{
+  "name": "box",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i93bf9411-f3c5-4968-ba6e-89265a57a289.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\box.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "93bf9411-f3c5-4968-ba6e-89265a57a289",
+  "lastmod": 1570312800539
+}
