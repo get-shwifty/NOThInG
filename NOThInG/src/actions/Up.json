@@ -1,0 +1,8 @@
+{
+  "name": "Up",
+  "methods": [
+    {
+      "code": "keyboard.ArrowUp"
+    }
+  ]
+}

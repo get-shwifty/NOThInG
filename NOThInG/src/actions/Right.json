@@ -1,0 +1,8 @@
+{
+  "name": "Right",
+  "methods": [
+    {
+      "code": "keyboard.ArrowRight"
+    }
+  ]
+}
