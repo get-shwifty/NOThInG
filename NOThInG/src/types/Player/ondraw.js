@@ -10,7 +10,8 @@ if(this.MMovable.dir === DIR.UP) {
     if (this.MAntiGravity) {
         this.tex = 'Player_Gravity_Front';
     } else {
-        this.tex = 'Player_Front';
+        this.tex = 'Player_Iddle_Front';
+        this.play();
     }
     this.scale.x = 1;
 } else if(this.MMovable.dir === DIR.LEFT) {
