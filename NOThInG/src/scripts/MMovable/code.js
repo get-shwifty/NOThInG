@@ -1,80 +1,76 @@
 
-const MMovable = (() => {
-    const getMovableNear = (self, dir) => {
-        return utils.getNextDir(self, dir, 'MMovable');
-    };
-    const hasObstacleNear = (self, dir) => {
-        return utils.getNextDir(self, dir, 'MObstacle').length > 0;
-    };
-    const canGoDir = (self, dir) => {
-        if(hasObstacleNear(self, dir)) {
-            return false;
-        }
-        const arr = [];
-        for(const movableObject of getMovableNear(self, dir)) {
-            if(!canGoDir(movableObject, dir)) {
-                return false;
+const MMovable = (self) => {
+    self.MMovable = {
+        goUp() {
+            const other = self.MMovable.canGoDir(DIR.UP);
+            if(other) {
+                if(other !== true) {
+                    other.MMovable.goUp();
+                }
+                self.y -= TILE_SIZE;
+                
+                return true;
             } else {
-                arr.push(movableObject);
+                return false;
+            }
+        },
+        goDown() {
+            const other = self.MMovable.canGoDir(DIR.DOWN);
+            if(other) {
+                if(other !== true) {
+                    other.MMovable.goDown();
+                }
+                self.y += TILE_SIZE;
+                
+                return true;
+            } else {
+                return false;
+            }
+        },
+        goLeft() {
+            const other = self.MMovable.canGoDir(DIR.LEFT);
+            if(other) {
+                if(other !== true) {
+                    other.MMovable.goLeft();
+                }
+                self.x -= TILE_SIZE;
+                
+                return true;
+            } else {
+                return false;
+            }
+        },
+        goRight() {
+            const other = self.MMovable.canGoDir(DIR.RIGHT);
+            if(other) {
+                if(other !== true) {
+                    other.MMovable.goRight();
+                }
+                self.x += TILE_SIZE;
+                
+                return true;
+            } else {
+                return false;
+            }
+        },
+        
+        /// Helpers
+        
+        canGoDir(dir) {
+            if(utils.getNextDir(self, dir, 'MObstacle')) {
+                return false;
+            }
+            
+            const movableObject = utils.getNextDir(self, dir, 'MMovable');
+            if(movableObject) {
+                if(movableObject.MMovable.canGoDir(dir)) {
+                    return movableObject;
+                } else {
+                    return false;
+                }
+            } else {
+                return true;
             }
         }
-        return arr;
     };
-    
-    return (self) => {
-        self.MMovable = {
-            goUp: () => {
-                const others = canGoDir(self, DIR.UP);
-                if(others) {
-                    for(const other of others) {
-                        other.MMovable.goUp();
-                    }
-                    self.y -= TILE_SIZE;
-                    
-                    return true;
-                } else {
-                    return false;
-                }
-            },
-            goDown: () => {
-                const others = canGoDir(self, DIR.DOWN);
-                if(others) {
-                    for(const other of others) {
-                        other.MMovable.goDown();
-                    }
-                    self.y += TILE_SIZE;
-                    
-                    return true;
-                } else {
-                    return false;
-                }
-            },
-            goLeft: () => {
-                const others = canGoDir(self, DIR.LEFT);
-                if(others) {
-                    for(const other of others) {
-                        other.MMovable.goLeft();
-                    }
-                    self.x -= TILE_SIZE;
-                    
-                    return true;
-                } else {
-                    return false;
-                }
-            },
-            goRight: () => {
-                const others = canGoDir(self, DIR.RIGHT);
-                if(others) {
-                    for(const other of others) {
-                        other.MMovable.goRight();
-                    }
-                    self.x += TILE_SIZE;
-                    
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        };
-    }
-})();
+};

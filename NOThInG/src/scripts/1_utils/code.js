@@ -23,14 +23,13 @@ const utils = {
         }
     },
     getNextDir: (a, dir, prop) => {
-        const res = [];
         for(const b of ct.room.children) {
             if(utils.isNextDir(a, b, dir) && (prop === undefined || b[prop])) {
-                res.push(b);
+                return b;
             }
         }
         
-        return res;
+        return false;
     },
     getUnderDistance: (a, dist, prop) => {
         const res = [];
