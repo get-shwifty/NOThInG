@@ -36,6 +36,7 @@ const MContainer =  (self, maxSlots) => {
                 let elDrop = this.popElement();
                 if (elDrop) {
                     let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);
+                    utils.move(newEl, dir);
                 }
                 // if (this.MMovable.dir == DIR.UP) {
                 //     newEl.MMovable.goUp();
