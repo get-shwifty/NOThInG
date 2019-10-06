@@ -1,0 +1,29 @@
+{
+  "name": "UI_Exit",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 289,
+  "imgHeight": 61,
+  "width": 289,
+  "height": 61,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i96ba6c15-5bb1-46b5-868e-af860e2e2ef1.png",
+  "source": "/home/alexis/git/NOThInG/Img/exit.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 289,
+  "top": 0,
+  "bottom": 61,
+  "uid": "96ba6c15-5bb1-46b5-868e-af860e2e2ef1",
+  "lastmod": 1570322573568
+}

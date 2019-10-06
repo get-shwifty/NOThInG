@@ -1,0 +1,29 @@
+{
+  "name": "Player_Back_Gravity",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i0ef55f6b-487c-44bf-9948-e371f8aa81e5.png",
+  "source": "/home/alexis/git/NOThInG/Img/character_gravity_back.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "0ef55f6b-487c-44bf-9948-e371f8aa81e5",
+  "lastmod": 1570322465405
+}

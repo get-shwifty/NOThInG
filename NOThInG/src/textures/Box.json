@@ -1,0 +1,53 @@
+{
+  "name": "Box",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i93bf9411-f3c5-4968-ba6e-89265a57a289.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\box.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "93bf9411-f3c5-4968-ba6e-89265a57a289",
+  "lastmod": 1570350717212,
+  "stripPoints": [
+    {
+      "x": 0,
+      "y": -60
+    },
+    {
+      "x": 57,
+      "y": -18
+    },
+    {
+      "x": 35,
+      "y": 48
+    },
+    {
+      "x": -35,
+      "y": 48
+    },
+    {
+      "x": -57,
+      "y": -18
+    }
+  ],
+  "closedStrip": true,
+  "r": 59
+}

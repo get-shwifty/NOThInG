@@ -1,0 +1,29 @@
+{
+  "name": "El_G",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i5703d2c0-1497-4cf0-b013-0694f60ff494.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\g.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "5703d2c0-1497-4cf0-b013-0694f60ff494",
+  "lastmod": 1570350725218
+}

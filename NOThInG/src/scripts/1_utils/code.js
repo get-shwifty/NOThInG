@@ -31,5 +31,18 @@ const utils = {
         }
         
         return res;
+    },
+    getUnderDistance: (a, dist, prop) => {
+        const res = [];
+        for(const b of ct.room.children) {
+            if(a === b) {
+                continue;
+            }
+            if(utils.distance(a, b) <= dist && (prop === undefined || b[prop])) {
+                res.push(b);
+            }
+        }
+        
+        return res;
     }
 };

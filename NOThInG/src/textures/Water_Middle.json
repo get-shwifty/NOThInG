@@ -1,0 +1,29 @@
+{
+  "name": "Water_Middle",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "icf601109-377d-49cd-8e0f-cf3ea6fc93d1.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\water_middle.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "cf601109-377d-49cd-8e0f-cf3ea6fc93d1",
+  "lastmod": 1570322940839
+}

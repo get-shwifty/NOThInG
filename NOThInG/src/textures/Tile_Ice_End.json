@@ -1,0 +1,30 @@
+{
+  "name": "Tile_Ice_End",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    58,
+    58
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 116,
+  "imgHeight": 116,
+  "width": 116,
+  "height": 116,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i63b6cef0-8b54-414a-a825-e6112ebff211.png",
+  "source": "/home/alexis/git/NOThInG/Img/ice_end.png",
+  "shape": "rect",
+  "left": 58,
+  "right": 58,
+  "top": 58,
+  "bottom": 58,
+  "uid": "63b6cef0-8b54-414a-a825-e6112ebff211",
+  "r": 58,
+  "lastmod": 1570322706405
+}

@@ -1,0 +1,29 @@
+{
+  "name": "UI_Start",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 293,
+  "imgHeight": 65,
+  "width": 293,
+  "height": 65,
+  "offx": 0,
+  "offy": 0,
+  "origname": "if6ea17db-8740-4b82-be38-906ca7636e79.png",
+  "source": "/home/alexis/git/NOThInG/Img/start.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 293,
+  "top": 0,
+  "bottom": 65,
+  "uid": "f6ea17db-8740-4b82-be38-906ca7636e79",
+  "lastmod": 1570322834827
+}

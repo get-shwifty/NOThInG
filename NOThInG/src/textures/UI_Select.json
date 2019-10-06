@@ -1,0 +1,29 @@
+{
+  "name": "UI_Select",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 289,
+  "imgHeight": 60,
+  "width": 289,
+  "height": 60,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i949a91bc-a838-42dd-8555-51eca9b1f157.png",
+  "source": "/home/alexis/git/NOThInG/Img/select.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 289,
+  "top": 0,
+  "bottom": 60,
+  "uid": "949a91bc-a838-42dd-8555-51eca9b1f157",
+  "lastmod": 1570322850845
+}

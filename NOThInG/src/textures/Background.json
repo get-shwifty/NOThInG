@@ -1,0 +1,30 @@
+{
+  "name": "Background",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "iba7943c6-49aa-446f-a25c-b284078dfc41.png",
+  "source": "/home/alexis/git/NOThInG/Img/background.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "ba7943c6-49aa-446f-a25c-b284078dfc41",
+  "tiled": true,
+  "lastmod": 1570322427370
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Porte_Fermee",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ida80b21c-f677-45f5-b2b4-82a8f15267fa.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\porte_fermee.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "da80b21c-f677-45f5-b2b4-82a8f15267fa",
+  "lastmod": 1570322900349
+}

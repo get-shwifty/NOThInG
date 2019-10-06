@@ -1,0 +1,29 @@
+{
+  "name": "Reactor_Off",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i9744b90a-334e-4a42-82ae-a1621ab09aca.png",
+  "source": "/home/alexis/git/NOThInG/Img/reactor_off.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "9744b90a-334e-4a42-82ae-a1621ab09aca",
+  "lastmod": 1570322914220
+}

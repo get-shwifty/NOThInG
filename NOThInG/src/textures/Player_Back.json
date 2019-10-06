@@ -1,0 +1,29 @@
+{
+  "name": "Player_Back",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i3e9f44de-c324-4025-be3b-9ce7ccd2194f.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_back.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "3e9f44de-c324-4025-be3b-9ce7ccd2194f",
+  "lastmod": 1570322415978
+}

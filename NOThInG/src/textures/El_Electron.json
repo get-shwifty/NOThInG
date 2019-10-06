@@ -1,0 +1,29 @@
+{
+  "name": "El_Electron",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 120,
+  "imgHeight": 120,
+  "width": 120,
+  "height": 120,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i442f0810-1e23-4e20-b554-f3d29117e510.png",
+  "source": "/home/alexis/git/NOThInG/Img/electron.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 120,
+  "top": 0,
+  "bottom": 120,
+  "uid": "442f0810-1e23-4e20-b554-f3d29117e510",
+  "lastmod": 1570322565036
+}

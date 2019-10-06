@@ -1,0 +1,29 @@
+{
+  "name": "Shadow",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "iba3d1d0a-62c0-42bd-9479-95812e8695ea.png",
+  "source": "/home/alexis/git/NOThInG/Img/shadow.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "ba3d1d0a-62c0-42bd-9479-95812e8695ea",
+  "lastmod": 1570322891619
+}

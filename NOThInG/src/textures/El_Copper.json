@@ -1,0 +1,29 @@
+{
+  "name": "El_Copper",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 120,
+  "imgHeight": 120,
+  "width": 120,
+  "height": 120,
+  "offx": 0,
+  "offy": 0,
+  "origname": "id60edc48-35c8-430d-ae01-711964447c51.png",
+  "source": "/home/alexis/git/NOThInG/Img/copper.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 120,
+  "top": 0,
+  "bottom": 120,
+  "uid": "d60edc48-35c8-430d-ae01-711964447c51",
+  "lastmod": 1570322556965
+}

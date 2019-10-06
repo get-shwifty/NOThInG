@@ -4,14 +4,14 @@ if(ct.actions.Up.pressed) {
     }
 } else if(ct.actions.Down.pressed) {
     if(this.MMovable.goDown()) {
-        self.lastMove = DIR.UP;
+        self.lastMove = DIR.DOWN;
     }
 } else if(ct.actions.Left.pressed) {
     if(this.MMovable.goLeft()) {
-        self.lastMove = DIR.UP;
+        self.lastMove = DIR.LEFT;
     }
 } else if(ct.actions.Right.pressed) {
     if(this.MMovable.goRight()) {
-        self.lastMove = DIR.UP;
+        self.lastMove = DIR.RIGHT;
     }
 }
