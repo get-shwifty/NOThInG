@@ -37,7 +37,3 @@ if(ct.actions.Up.pressed) {
         this.scale.x = 1;
     }
 }
-
-//if (this.MAntiGravity) {
-//    
-//}
