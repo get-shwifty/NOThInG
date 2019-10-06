@@ -1,0 +1,8 @@
+{
+  "name": "Take",
+  "methods": [
+    {
+      "code": "keyboard.KeyK"
+    }
+  ]
+}

@@ -36,6 +36,10 @@ if(ct.actions.Up.pressed) {
         }
         this.scale.x = 1;
     }
+} else if(ct.actions.Take.pressed) {
+
+} else if(ct.actions.Drop.pressed) {
+
 }
 
 //if (this.MAntiGravity) {

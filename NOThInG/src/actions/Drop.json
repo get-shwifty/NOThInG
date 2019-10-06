@@ -1,0 +1,8 @@
+{
+  "name": "Drop",
+  "methods": [
+    {
+      "code": "keyboard.KeyL"
+    }
+  ]
+}
