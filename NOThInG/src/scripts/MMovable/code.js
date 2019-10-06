@@ -1,15 +1,7 @@
 
 const MMovable = (self, gravity) => {
     const move = (dir) => {
-        if(dir === DIR.UP) {
-            self.y -= TILE_SIZE;
-        } else if(dir === DIR.DOWN) {
-            self.y += TILE_SIZE;
-        } else if(dir === DIR.LEFT) {
-            self.x -= TILE_SIZE;
-        } else if(dir === DIR.RIGHT) {
-            self.x += TILE_SIZE;
-        }
+        utils.move(self, dir);
     };
         
     self.MMovable = {
