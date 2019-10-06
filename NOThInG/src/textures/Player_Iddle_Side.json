@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,9 +20,9 @@
   "origname": "iadbcacc6-6911-4ade-ad2b-dec77f0dae61.png",
   "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_iddle_side.png",
   "shape": "rect",
-  "left": 0,
-  "right": 238,
-  "top": 0,
-  "bottom": 119,
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "adbcacc6-6911-4ade-ad2b-dec77f0dae61"
 }

@@ -1,0 +1,28 @@
+{
+  "name": "Player_Move_Side",
+  "untill": 0,
+  "grid": [
+    10,
+    1
+  ],
+  "axis": [
+    59,
+    67
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 1190,
+  "imgHeight": 134,
+  "width": 119,
+  "height": 134,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i07f7929a-e6a1-4751-828b-b2bb79c4afd8.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_move_front_1.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 67,
+  "bottom": 67,
+  "uid": "07f7929a-e6a1-4751-828b-b2bb79c4afd8"
+}
