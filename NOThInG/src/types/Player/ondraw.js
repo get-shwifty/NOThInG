@@ -29,3 +29,5 @@ if(this.MMovable.dir === DIR.UP) {
     }
     this.scale.x = 1;
 }
+
+this.MContainer.onDraw();
