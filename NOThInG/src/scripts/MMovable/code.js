@@ -2,6 +2,7 @@
 const MMovable = (self) => {
     self.MMovable = {
         goUp() {
+            self.MMovable.dir = DIR.UP;
             const other = self.MMovable.canGoDir(DIR.UP);
             if(other) {
                 if(other !== true) {
@@ -15,6 +16,7 @@ const MMovable = (self) => {
             }
         },
         goDown() {
+            self.MMovable.dir = DIR.DOWN;
             const other = self.MMovable.canGoDir(DIR.DOWN);
             if(other) {
                 if(other !== true) {
@@ -28,6 +30,7 @@ const MMovable = (self) => {
             }
         },
         goLeft() {
+            self.MMovable.dir = DIR.LEFT;
             const other = self.MMovable.canGoDir(DIR.LEFT);
             if(other) {
                 if(other !== true) {
@@ -41,6 +44,7 @@ const MMovable = (self) => {
             }
         },
         goRight() {
+            self.MMovable.dir = DIR.RIGHT;
             const other = self.MMovable.canGoDir(DIR.RIGHT);
             if(other) {
                 if(other !== true) {

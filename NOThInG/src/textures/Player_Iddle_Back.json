@@ -1,0 +1,29 @@
+{
+  "name": "Player_Iddle_Back",
+  "untill": 0,
+  "grid": [
+    2,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 238,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i8a718b57-a56c-4f15-9479-377a2f6149e2.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_iddle_back.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 238,
+  "top": 0,
+  "bottom": 119,
+  "uid": "8a718b57-a56c-4f15-9479-377a2f6149e2",
+  "lastmod": 1570360229344
+}
