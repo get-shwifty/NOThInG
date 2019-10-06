@@ -1,0 +1,29 @@
+{
+  "name": "Player_Gravity_Back",
+  "untill": 0,
+  "grid": [
+    4,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 476,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i88fef1c3-0f2e-4699-9d18-15706e2ecb80.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_gravity_back_1.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 476,
+  "top": 0,
+  "bottom": 119,
+  "uid": "88fef1c3-0f2e-4699-9d18-15706e2ecb80",
+  "lastmod": 1570357382977
+}
