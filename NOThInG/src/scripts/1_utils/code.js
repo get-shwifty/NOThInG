@@ -1,5 +1,16 @@
 
 const utils = {
+    move: (el, dir) => {
+        if(dir === DIR.UP) {
+            el.y -= TILE_SIZE;
+        } else if(dir === DIR.DOWN) {
+            el.y += TILE_SIZE;
+        } else if(dir === DIR.LEFT) {
+            el.x -= TILE_SIZE;
+        } else if(dir === DIR.RIGHT) {
+            el.x += TILE_SIZE;
+        }
+    },
     distance: (a, b) => {
         return Math.abs(utils.dx(a, b)) + Math.abs(utils.dy(a, b));
     },
@@ -23,9 +34,21 @@ const utils = {
         }
     },
     getNextDir: (a, dir, prop) => {
+        if(prop && !Array.isArray(prop)) {
+            prop = [prop];
+        }
+        
         for(const b of ct.room.children) {
-            if(utils.isNextDir(a, b, dir) && (prop === undefined || b[prop])) {
-                return b;
+            if(utils.isNextDir(a, b, dir)) {
+                if(prop) {
+                    for(const p of prop) {
+                        if(b[p]) {
+                            return b;
+                        }
+                    }
+                } else {
+                    return b;
+                }
             }
         }
         

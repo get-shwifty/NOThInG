@@ -1,0 +1,28 @@
+{
+  "name": "Player_Move_Back",
+  "untill": 0,
+  "grid": [
+    10,
+    1
+  ],
+  "axis": [
+    59,
+    67
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 1190,
+  "imgHeight": 134,
+  "width": 119,
+  "height": 134,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ia195cbfd-ba19-4998-814a-a255ce821e16.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_move_back.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 67,
+  "bottom": 67,
+  "uid": "a195cbfd-ba19-4998-814a-a255ce821e16"
+}

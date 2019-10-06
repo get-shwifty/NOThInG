@@ -1,2 +1,2 @@
-MMovable(this);
+MMovable(this, true);
 MContainer(this, 2);

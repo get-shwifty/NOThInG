@@ -1,33 +1,48 @@
+const playAnimation = function(obj, animName){
+    if (obj.tex !== animName){
+        obj.tex = animName;
+        obj.play();
+    }
+}
+
+this.animationSpeed = 0.08
+this.scale.x = this.MMovable.dir === DIR.LEFT ? -1: 1;
 
 if(this.MMovable.dir === DIR.UP) {
-    if (this.MAntiGravity) {
-        this.tex = 'Player_Back_Gravity';
-    } else {
-        this.tex = 'Player_Back';
+    if (this.MMovable.isAntiGravity()) {
+        this.tex = 'Player_Gravity_Back';
     }
-    this.scale.x = 1;
-} else if(this.MMovable.dir === DIR.DOWN) {
-    if (this.MAntiGravity) {
-        this.tex = 'Player_Front_Gravity';
+    else if(this.moving){
+        this.animationSpeed = 0.3
+        playAnimation(this, 'Player_Move_Back')
     } else {
-        this.tex = 'Player_Front';
+        playAnimation(this, 'Player_Iddle_Back')
     }
-    this.scale.x = 1;
-} else if(this.MMovable.dir === DIR.LEFT) {
-    self.lastMove = DIR.LEFT;
-    if (this.MAntiGravity) {
-        this.tex = 'Player_Side_Gravity';
-    } else {
-        this.tex = 'Player_Side';
+} 
+else if(this.MMovable.dir === DIR.DOWN) {
+    if (this.MMovable.isAntiGravity()) {
+        this.tex = 'Play_Gravity_Front'
     }
-    this.scale.x = -1;
-} else if(this.MMovable.dir === DIR.RIGHT) {
-    if (this.MAntiGravity) {
-        this.tex = 'Player_Side_Gravity';
-    } else {
-        this.tex = 'Player_Side';
+    else if(this.moving){
+        this.animationSpeed = 0.3
+        playAnimation(this, 'Player_Move_Front')
+    } 
+    else {
+        playAnimation(this, 'Player_Iddle_Front')
     }
-    this.scale.x = 1;
 }
+else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
+    if (this.MMovable.isAntiGravity()) {
+        this.tex = 'Player_Gravity_Side';
+    }
+    else if(this.moving){
+        this.animationSpeed = 0.3
+        playAnimation(this, 'Player_Move_Side')
+    } 
+    else {
+        playAnimation(this, 'Player_Iddle_Side')
+    }
+} 
+
 
 this.MContainer.onDraw();

@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "if61165e1-6d40-404c-a8b6-3261395b63a3.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_iddle_front.png",
+  "origname": "i392db41b-70b0-4084-9514-cbb19cf1520b.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\character_iddle_front.png",
   "shape": "rect",
-  "left": 0,
-  "right": 238,
-  "top": 0,
-  "bottom": 119,
-  "uid": "f61165e1-6d40-404c-a8b6-3261395b63a3"
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "392db41b-70b0-4084-9514-cbb19cf1520b"
 }
