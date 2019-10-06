@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,10 +20,10 @@
   "origname": "i0ef55f6b-487c-44bf-9948-e371f8aa81e5.png",
   "source": "/home/alexis/git/NOThInG/Img/character_gravity_back.png",
   "shape": "rect",
-  "left": 0,
-  "right": 119,
-  "top": 0,
-  "bottom": 119,
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "0ef55f6b-487c-44bf-9948-e371f8aa81e5",
-  "lastmod": 1570322465405
+  "lastmod": 1570357667327
 }

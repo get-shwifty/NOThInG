@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,12 +20,12 @@
   "origname": "i93bf9411-f3c5-4968-ba6e-89265a57a289.png",
   "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\box.png",
   "shape": "rect",
-  "left": 0,
-  "right": 119,
-  "top": 0,
-  "bottom": 119,
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "93bf9411-f3c5-4968-ba6e-89265a57a289",
-  "lastmod": 1570350717212,
+  "lastmod": 1570357672341,
   "stripPoints": [
     {
       "x": 0,

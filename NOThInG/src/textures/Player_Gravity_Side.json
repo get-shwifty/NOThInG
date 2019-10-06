@@ -1,0 +1,29 @@
+{
+  "name": "Player_Gravity_Side",
+  "untill": 0,
+  "grid": [
+    4,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 476,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "iaafe747b-c3c3-4218-b413-3e07bb2d1c24.png",
+  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_gravity_side.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 476,
+  "top": 0,
+  "bottom": 119,
+  "uid": "aafe747b-c3c3-4218-b413-3e07bb2d1c24",
+  "lastmod": 1570357680705
+}
