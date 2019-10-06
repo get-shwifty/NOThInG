@@ -1,4 +1,3 @@
-
 const MMovable = (self, gravity) => {
     const move = (dir) => {
         if(dir === DIR.UP) {
@@ -13,6 +12,7 @@ const MMovable = (self, gravity) => {
     };
         
     self.MMovable = {
+        dir: DIR.DOWN,
         go(dir) {
             self.MMovable.dir = dir;
             if(self.MMovable.isAntiGravity()) {
