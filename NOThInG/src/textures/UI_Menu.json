@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    277,
+    135
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,10 +20,10 @@
   "origname": "ifb9c16d6-d621-4ae4-a9b7-546aa0d8f064.png",
   "source": "/home/alexis/git/NOThInG/Img/Menu.png",
   "shape": "rect",
-  "left": 0,
-  "right": 554,
-  "top": 0,
-  "bottom": 270,
+  "left": 277,
+  "right": 277,
+  "top": 135,
+  "bottom": 135,
   "uid": "fb9c16d6-d621-4ae4-a9b7-546aa0d8f064",
-  "lastmod": 1570322742452
+  "lastmod": 1570359021525
 }
