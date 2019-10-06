@@ -1,11 +1,17 @@
 if(ct.actions.Up.pressed) {
-    this.y -= TILE_SIZE;
+    if(this.MMovable.goUp()) {
+        self.lastMove = DIR.UP;
+    }
 } else if(ct.actions.Down.pressed) {
-    this.y += TILE_SIZE;
+    if(this.MMovable.goDown()) {
+        self.lastMove = DIR.UP;
+    }
 } else if(ct.actions.Left.pressed) {
-    this.x -= TILE_SIZE;
+    if(this.MMovable.goLeft()) {
+        self.lastMove = DIR.UP;
+    }
 } else if(ct.actions.Right.pressed) {
-    this.x += TILE_SIZE;
+    if(this.MMovable.goRight()) {
+        self.lastMove = DIR.UP;
+    }
 }
-
-this.move();

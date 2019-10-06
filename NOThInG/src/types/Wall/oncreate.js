@@ -1,1 +1,1 @@
-this.movable = true; // MMovable(this);
+MObstacle(this);
