@@ -9,6 +9,13 @@ const DIR = {
     RIGHT: 'RIGHT'
 };
 
+const ANTI_DIR = {
+    UP: 'DOWN',
+    DOWN: 'UP',
+    LEFT: 'RIGHT',
+    RIGHT: 'LEFT'
+};
+
 const EL = {
     G:{
         tex: "El_G",

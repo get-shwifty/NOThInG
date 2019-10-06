@@ -14,7 +14,6 @@ if(this.MMovable.dir === DIR.UP) {
     }
     this.scale.x = 1;
 } else if(this.MMovable.dir === DIR.LEFT) {
-    self.lastMove = DIR.LEFT;
     if (this.MAntiGravity) {
         this.tex = 'Player_Side_Gravity';
     } else {

@@ -23,9 +23,21 @@ const utils = {
         }
     },
     getNextDir: (a, dir, prop) => {
+        if(prop && !Array.isArray(prop)) {
+            prop = [prop];
+        }
+        
         for(const b of ct.room.children) {
-            if(utils.isNextDir(a, b, dir) && (prop === undefined || b[prop])) {
-                return b;
+            if(utils.isNextDir(a, b, dir)) {
+                if(prop) {
+                    for(const p of prop) {
+                        if(b[p]) {
+                            return b;
+                        }
+                    }
+                } else {
+                    return b;
+                }
             }
         }
         

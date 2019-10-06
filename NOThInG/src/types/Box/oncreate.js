@@ -1,1 +1,1 @@
-MMovable(this);
+MMovable(this, true);
