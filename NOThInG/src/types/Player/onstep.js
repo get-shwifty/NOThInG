@@ -10,4 +10,8 @@ if(ct.actions.Up.pressed) {
 } else if(ct.actions.Right.pressed) {
     if(this.MMovable.goRight()) {
     }
+} else if(ct.actions.Take.pressed) {
+
+} else if(ct.actions.Drop.pressed) {
+
 }

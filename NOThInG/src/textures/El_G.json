@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,9 +20,9 @@
   "origname": "i5703d2c0-1497-4cf0-b013-0694f60ff494.png",
   "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\g.png",
   "shape": "rect",
-  "left": 0,
-  "right": 119,
-  "top": 0,
-  "bottom": 119,
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "5703d2c0-1497-4cf0-b013-0694f60ff494"
 }

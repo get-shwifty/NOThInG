@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,9 +20,9 @@
   "origname": "i88fef1c3-0f2e-4699-9d18-15706e2ecb80.png",
   "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_gravity_back_1.png",
   "shape": "rect",
-  "left": 0,
-  "right": 476,
-  "top": 0,
-  "bottom": 119,
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "88fef1c3-0f2e-4699-9d18-15706e2ecb80"
 }

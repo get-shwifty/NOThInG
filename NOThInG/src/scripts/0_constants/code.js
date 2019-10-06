@@ -8,3 +8,10 @@ const DIR = {
     LEFT: 'LEFT',
     RIGHT: 'RIGHT'
 };
+
+const EL = {
+    G:{
+        tex: "El_G",
+        type: "El_Anti_Gravity"
+    }
+};

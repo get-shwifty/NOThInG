@@ -36,7 +36,8 @@
     },
     "fileBasedStructure": true,
     "title": "NOThInG",
-    "highDensity": false
+    "highDensity": false,
+    "pixelatedrender": false
   },
   "fonts": [],
   "startroom": "70d941bf-6f8e-497a-b273-4a39f6ab0720"
