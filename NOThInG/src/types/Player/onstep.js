@@ -12,7 +12,9 @@ if(ct.actions.Up.pressed) {
         this.MContainer.addElement(objInFront);
     } else if (objInFront.MContainer) {
         let obj = objInFront.MContainer.popElement();
-        this.MContainer.addElement(obj);
+        if (obj) {
+            this.MContainer.addElement(obj);
+        }
     }
 } else if(ct.actions.Drop.pressed) {
     this.MContainer.dropElement(this.MMovable.dir);

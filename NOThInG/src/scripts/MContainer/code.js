@@ -4,7 +4,7 @@ const MContainer =  (self, maxSlots) => {
     
     self.MContainer = {
         addElement(other) {
-            if(objectsTypes.length < maxSlots) {
+            if(other && objectsTypes.length < maxSlots) {
                 objectsTypes.push(other);
                 other.kill = true;
                 self.MContainer.updateView();
@@ -29,10 +29,14 @@ const MContainer =  (self, maxSlots) => {
             let objInFront = utils.getNextDir(self, dir);
             if (objInFront && objInFront.MContainer && objInFront.MContainer.hasFreeSlot()) {
                 let elDrop = this.popElement();
-                objInFront.MContainer.addElement(elDrop);
+                if (elDrop) {
+                    objInFront.MContainer.addElement(elDrop);
+                }
             } else if (!objInFront) {
                 let elDrop = this.popElement();
-                let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);
+                if (elDrop) {
+                    let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);
+                }
                 // if (this.MMovable.dir == DIR.UP) {
                 //     newEl.MMovable.goUp();
                 // } else if (this.MMovable.dir == DIR.DOWN) {
