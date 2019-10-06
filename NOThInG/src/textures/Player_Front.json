@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    60,
+    60
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,12 +20,12 @@
   "origname": "i6b3af325-22e6-4bb9-a9ac-b59f899b278d.png",
   "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_front.png",
   "shape": "rect",
-  "left": 0,
-  "right": 120,
-  "top": 0,
-  "bottom": 120,
+  "left": 60,
+  "right": 60,
+  "top": 60,
+  "bottom": 60,
   "uid": "6b3af325-22e6-4bb9-a9ac-b59f899b278d",
-  "lastmod": 1570350745311,
+  "lastmod": 1570357571687,
   "stripPoints": [
     {
       "x": 0,
