@@ -1,5 +1,16 @@
 
 const utils = {
+    move: (el, dir) => {
+        if(dir === DIR.UP) {
+            el.y -= TILE_SIZE;
+        } else if(dir === DIR.DOWN) {
+            el.y += TILE_SIZE;
+        } else if(dir === DIR.LEFT) {
+            el.x -= TILE_SIZE;
+        } else if(dir === DIR.RIGHT) {
+            el.x += TILE_SIZE;
+        }
+    },
     distance: (a, b) => {
         return Math.abs(utils.dx(a, b)) + Math.abs(utils.dy(a, b));
     },
