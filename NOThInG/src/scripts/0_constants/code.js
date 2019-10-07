@@ -26,4 +26,8 @@ const EL = {
         tex: "El_Th",
         type: "El_Thorium"
     },
+    O:{
+        tex: "El_O",
+        type: "El_Oxygen"
+    },
 };

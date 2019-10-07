@@ -4,11 +4,9 @@
   "height": 1600,
   "backgrounds": [
     {
-      "depth": -5,
-      "texture": "ba7943c6-49aa-446f-a25c-b284078dfc41",
-      "extends": {
-        "shiftX": 0
-      }
+      "depth": -4,
+      "texture": "3259afb1-de41-465a-be2f-79733e0f03da",
+      "extends": {}
     }
   ],
   "copies": [
@@ -218,13 +216,13 @@
       "uid": "156dbaf7-cb28-4cb8-a613-74d40caa1506"
     },
     {
-      "x": 1309,
-      "y": 952,
+      "x": 1071,
+      "y": 1071,
       "uid": "f7c06d8e-e364-449c-844c-e39002f21282"
     },
     {
-      "x": 1309,
-      "y": 833,
+      "x": 1071,
+      "y": 952,
       "uid": "2be33b43-7134-4a99-ab9a-9aa654e3db83"
     }
   ],
