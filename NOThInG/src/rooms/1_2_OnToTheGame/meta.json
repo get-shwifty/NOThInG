@@ -3,7 +3,13 @@
   "width": 800,
   "height": 600,
   "backgrounds": [],
-  "copies": [],
+  "copies": [
+    {
+      "x": 512,
+      "y": 320,
+      "uid": "47823805-a91e-454b-80b5-95d1b032f885"
+    }
+  ],
   "tiles": [
     {
       "depth": -10,

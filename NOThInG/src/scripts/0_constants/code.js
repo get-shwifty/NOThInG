@@ -31,3 +31,5 @@ const EL = {
         type: "El_Oxygen"
     },
 };
+
+const NON_LEVEL_ROOMS = ["Menu", "Menu_Level_Select","Final_Screen"]
