@@ -5,6 +5,7 @@ const MMovable = (self) => {
     
     const move = (dir) => {
         moves.push({
+            dir,
             remainingFrames: ONE_STEP_FRAME,
             speed: TILE_SIZE / ONE_STEP_FRAME,
             direction: utils.getDirRotationDeg(dir),
@@ -27,19 +28,24 @@ const MMovable = (self) => {
         onStep() {
             if(self.MMovable.moving) {
                 const move = moves[0];
-                
+
                 move.remainingFrames -= ct.delta;
                 if(move.remainingFrames <= 0) {
+                    self.MMovable.dir = move.dir;
                     self.speed = 0;
                     self.x = move.finalPos.x;
                     self.y = move.finalPos.y;
                     moves.shift();
                     self.MEvent.emit('step');
-                    if(moves.length === 0) {
-                        self.MMovable.moving = false;
-                        self.MEvent.emit('endMoving');
-                    } else {
+
+                    if(self.MMovable.isAntiGravity()) {
+                        self.MMovable.goAntiGravity(self.MMovable.dir, true); // Try to move again if in gravity
+                    }
+
+                    if(moves.length > 0) {
                         self.MMovable.onStep();
+                    } else {
+                        self.MMovable.moving = false;
                     }
                 } else {
                     self.speed = move.speed;
@@ -60,17 +66,17 @@ const MMovable = (self) => {
             const other = self.MMovable.canGoDir(dir);
             if(other) {
                 if(other !== true) {
-                    if(other.MMovable.go(dir, true)) {
+                    if(other.MMovable.go(dir, true) && !propagation) {
                         move(dir);
+                        return true;
                     }
                 } else {
                     move(dir);
+                    return true;
                 }
-                
-                return true;
-            } else {
-                return false;
             }
+
+            return false;
         },
         isAntiGravity() {
             return self.MContainer && self.MContainer.has(EL.G);
@@ -85,63 +91,32 @@ const MMovable = (self) => {
                     return false;
                 }
             }
-            
-            // let hasSupport = false;
-            // const movableAntiGravityObjects = []
-            // for(const d of Object.values(DIR)) {
-            //     if(d !== dir) {
-            //         if(utils.getNextDir(getFuturePos(), d, 'MObstacle')) {
-            //             hasSupport = true;
-            //         }
-            //         const movableObject = utils.getNextDir(getFuturePos(), d, 'MMovable');
-            //         if(movableObject) {
-            //             hasSupport = true;
-            //             if(!propagation && movableObject.MMovable.isAntiGravity()) {
-            //                 movableAntiGravityObjects.push(movableObject);
-            //             }
-            //         }
-            //     }
-            // }
-            // if(!propagation && !hasSupport) {
-            //     return false;
-            // }
-            
-            let somethingMoved = false;
-            for(let k = 0; k < 50; k++) {
-                const other = self.MMovable.canGoDirGravity(dir);
-                if(!other) { // player is blocked
-                    break;
-                } else if(other !== true) { // player is blocked by a gravity movable object
-                    if(self.MMovable.moving) {
-                        self.MEvent.once('endMoving', () => {
-                            other.MMovable.goAntiGravity(dir, true);
-                        });
-                    } else {
-                        other.MMovable.goAntiGravity(dir, true);
-                    }
-                    break;
-                } else { // player can freely move
-                    somethingMoved = true;
-                    move(dir);
-                }
+
+            const other = self.MMovable.canGoDirGravity(dir);
+            if(!other) { // player is blocked
+                return false;
+            } else if(other !== true) { // player is blocked by a gravity movable object
+                other.MMovable.go(dir, true);
+                return false;
+            } else { // player can freely move
+                move(dir);
+                return true;
             }
-            
-            // if(somethingMoved) {
-            //     for(const obj of movableAntiGravityObjects) {
-            //         obj.MMovable.goAntiGravity(ANTI_DIR[dir], true);
-            //     }
-            // }
-            
+
             return somethingMoved;
         },
         
         /// Helpers
         
         canGoDir(dir) {
+            if(self.MMovable.isAntiGravity()) {
+                return self.MMovable.canGoDirGravity(dir);
+            }
+
             if(utils.getNextDir(getFuturePos(), dir, 'MObstacle') ) {
                 return false;
             }
-            
+
             const movableObject = utils.getNextDir(getFuturePos(), dir, 'MMovable');
             if(movableObject) {
                 if(movableObject.MMovable.canGoDir(dir)) {
@@ -158,10 +133,10 @@ const MMovable = (self) => {
             if(obstacle && obstacle.MObstacle.obstacleInAntiGravity) {
                 return false;
             }
-            
+
             const movableObject = utils.getNextDir(getFuturePos(), dir, 'MMovable');
             if(movableObject) {
-                if(movableObject.MMovable.isAntiGravity() && movableObject.MMovable.canGoDirGravity(dir)) {
+                if(movableObject.MMovable.canGoDir(dir)) {
                     return movableObject;
                 } else {
                     return false;
