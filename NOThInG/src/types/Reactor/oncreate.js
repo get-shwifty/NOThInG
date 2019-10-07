@@ -1,4 +1,4 @@
-MActivable(this,false, 1);
+MActivable(this,false, 2);
 MMovable(this);
 MContainer(this, 1);
 MEvent(this);
