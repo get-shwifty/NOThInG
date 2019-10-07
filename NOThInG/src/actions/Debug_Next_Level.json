@@ -1,0 +1,8 @@
+{
+  "name": "Debug_Next_Level",
+  "methods": [
+    {
+      "code": "keyboard.KeyY"
+    }
+  ]
+}

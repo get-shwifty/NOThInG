@@ -1,0 +1,17 @@
+{
+  "name": "Final_Screen",
+  "width": 800,
+  "height": 600,
+  "backgrounds": [],
+  "copies": [],
+  "tiles": [
+    {
+      "depth": -10,
+      "tiles": []
+    }
+  ],
+  "uid": "c81d582c-522d-42c9-ba9d-cb09a401c04a",
+  "thumbnail": "cb09a401c04a",
+  "gridX": 64,
+  "gridY": 64
+}

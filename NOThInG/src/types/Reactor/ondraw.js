@@ -1,10 +1,6 @@
-if (this.MActivable.isActive()){
+if (this.MTransmitter[SIGNAL.ELECTRICITY].isActive()) {
     this.body.core.tex = 'Reactor_Core_On';
-    this.body.background.rotation += 0.035
-    this.MActivable.activate(2);
+    this.body.background.rotation += 0.035;
 }else{
-    this.body.core.tex = 'Reactor_Core_Off'
-    this.MActivable.deactivate(2);
+    this.body.core.tex = 'Reactor_Core_Off';
 }
-
-this.MContainer.onDraw("Reactor");

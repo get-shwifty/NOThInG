@@ -1,4 +1,6 @@
-const MContainer =  (self, maxSlots, shadowScale=1) => {
+const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowScale=1) => {
+    MEvent(self);
+
     const objectsTypes = [];
     const pixiObjects = [];
     
@@ -91,8 +93,8 @@ const MContainer =  (self, maxSlots, shadowScale=1) => {
                 // TODO positions
             }
         },
-        onDraw(entity) {
-            if (entity == "Player" || entity == "Box") {
+        onDraw() {
+            if (elementsDisplayTemplate === "list") {
                 for(const [i, obj] of pixiObjects.entries()) {
                     obj.scale.x = 0.4 / self.scale.x;
                     obj.scale.y = 0.4 / self.scale.y;
@@ -108,7 +110,7 @@ const MContainer =  (self, maxSlots, shadowScale=1) => {
             
             self.shadow.visible = false
             self.body.y = 0;
-            if (self.MMovable.isAntiGravity()) {
+            if (self.MContainer && self.MContainer.has(EL.G)) {
                 self.body.y = -15*shadowScale + Math.sin(frameCount / (4*shadowScale)) * 2.5;
                 self.shadow.visible = true;
                 self.shadow.scale.x += Math.sin(frameCount / (4*shadowScale)) * 0.01;

@@ -23,6 +23,3 @@ if(ct.actions.Up.pressed) {
 } else if(ct.actions.Drop.pressed && !this.MMovable.moving) {
     this.MContainer.dropElement(this.MMovable.dir);
 }
-
-this.MMovable.onStep();
-this.move();

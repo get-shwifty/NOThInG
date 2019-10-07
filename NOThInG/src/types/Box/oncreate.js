@@ -1,6 +1,6 @@
 MMovable(this);
 
-MContainer(this, 3, 2);
+MContainer(this, 3, 'list', 2);
 
 this.MEvent.on('moveStart', () => {
     console.log("moveStart");
