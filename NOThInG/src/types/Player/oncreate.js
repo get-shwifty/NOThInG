@@ -31,7 +31,7 @@ this.MEvent.on("elementTaken", (el) => {
 this.MEvent.on("elementDropped", (el, remainingEls) => {
     ct.sound.spawn("pickup")
     for(let obj of remainingEls) {
-        if (obj.MElement.getType().type == EL.O.type) {
+        if (obj.MElement.getType() == EL.O) {
             return;
         }
     }

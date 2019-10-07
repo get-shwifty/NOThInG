@@ -11,7 +11,7 @@ const MZone = (self, types, callback) => {
             }
         },
         onStep() {
-            for(const el of utils.getUnderDistance(self, 0)) {
+            for(const el of utils.getUnderDistance(self, 0, 'MElement')) {
                 this.drop(el);
             }
         }
