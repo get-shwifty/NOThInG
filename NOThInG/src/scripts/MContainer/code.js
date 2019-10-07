@@ -45,13 +45,13 @@ const MContainer =  (self, maxSlots) => {
             return null;
         },
         dropElement(dir) {
-            let objInFront = utils.getNextDir(self, dir);
-            if (objInFront && objInFront.MContainer && objInFront.MContainer.hasFreeSlot()) {
+            let contInFront = utils.getNextDir(self, dir, "MContainer");
+            if (contInFront && contInFront.MContainer && contInFront.MContainer.hasFreeSlot()) {
                 let elDrop = this.popElement();
                 if (elDrop) {
-                    objInFront.MContainer.addElement(elDrop);
+                    contInFront.MContainer.addElement(elDrop);
                 }
-            } else if (!objInFront) {
+            } else if (!contInFront, !utils.getNextDir(self, dir)) {
                 let elDrop = this.popElement();
                 if (elDrop) {
                     let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);

@@ -1,6 +1,6 @@
 {
   "name": "Wall",
-  "depth": 0,
+  "depth": -1,
   "uid": "2ea92108-4888-43f7-91a5-af4d54c82919",
   "texture": "eb78264e-47bd-47d8-a15d-7fe10de65704",
   "extends": {}
