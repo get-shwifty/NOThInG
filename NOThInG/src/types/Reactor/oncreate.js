@@ -5,12 +5,14 @@ const transmitter = MTransmitter(this, SIGNAL.ELECTRICITY, 2);
 const isTh = obj => obj.MElement.getType().type === EL.Th.type;
 
 this.MEvent.on("elementTaken", (el) => {
+    //ct.sound.spawn("generator")
     if (isTh(el)) {
         transmitter.activate();
     }
 });
 
 this.MEvent.on("elementDropped", (el, remainingEls) => {
+    //ct.sound.spawn("generator")
     if(!remainingEls.find(isTh)) {
         transmitter.deactivate();
     }
