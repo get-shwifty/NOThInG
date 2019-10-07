@@ -6,8 +6,8 @@
     1
   ],
   "axis": [
-    0,
-    0
+    60,
+    59
   ],
   "marginx": 0,
   "marginy": 0,
@@ -20,9 +20,9 @@
   "origname": "ic0245001-68a3-4908-8ea8-ee4c9c829029.png",
   "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\wall_bottom.png",
   "shape": "rect",
-  "left": 0,
-  "right": 120,
-  "top": 0,
-  "bottom": 119,
+  "left": 60,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
   "uid": "c0245001-68a3-4908-8ea8-ee4c9c829029"
 }
