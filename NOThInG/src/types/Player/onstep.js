@@ -23,3 +23,30 @@ if(ct.actions.Up.pressed) {
 } else if(ct.actions.Drop.pressed && !this.MMovable.moving) {
     this.MContainer.dropElement(this.MMovable.dir);
 }
+
+if (ct.actions.Restart.pressed) {
+    PIXI.ticker.shared.speed = 1;
+    ct.pixiApp.ticker.speed = 1;
+    ct.rooms.switch(ct.room.name);
+}
+
+if (ct.actions.Escape.pressed) {
+    if (!this.pause) {
+        this.pause = true;
+        
+        PIXI.ticker.shared.speed = 0;
+        ct.pixiApp.ticker.speed = 0;
+        this.arrMenu.push(ct.types.make("UI_Menu", ct.viewWidth / 2, SPLASH_POS.UI_Menu.y));
+        this.arrMenu.push(ct.types.make("UI_Restart", ct.viewWidth / 2, SPLASH_POS.First_Box.y));
+        this.arrMenu.push(ct.types.make("UI_Select", ct.viewWidth / 2, SPLASH_POS.Second_Box.y));
+        this.arrMenu.push(ct.types.make("UI_Menu_Button", ct.viewWidth / 2, SPLASH_POS.Third_Box.y));
+    } else if (!this.dead) {
+        this.pause = false;
+        
+        PIXI.ticker.shared.speed = 1;
+        ct.pixiApp.ticker.speed = 1;
+        for (let butt of this.arrMenu) {
+            butt.kill = true;
+        }
+    }
+}

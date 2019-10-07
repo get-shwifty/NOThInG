@@ -3,6 +3,11 @@ MContainer(this, 4, 'list');
 
 this.body.tex = -1;
 
+// *** Pausing and Menu ***
+this.pause = false;
+this.dead = false;
+this.arrMenu = [];
+
 // *** Oxygen ***
 this.MAX_OXYGEN = 4; 
 this.remainingOxygen = this.MAX_OXYGEN;
@@ -57,11 +62,23 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
     }
 });
 
+// *** Dying and Menu ***
+this.dyingMenu = () => {
+    this.pause = true;
+    this.dead = true;
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
+    ct.types.make("UI_Menu", ct.viewWidth / 2, SPLASH_POS.UI_Menu.y);
+    ct.types.make("UI_Restart", ct.viewWidth / 2, SPLASH_POS.First_Box.y);
+    ct.types.make("UI_Select", ct.viewWidth / 2, SPLASH_POS.Second_Box.y);
+    ct.types.make("UI_Menu_Button", ct.viewWidth / 2, SPLASH_POS.Third_Box.y);
+};
+
 // *** MEvent : moving ***
 this.MEvent.on('moveStart', () => {
     if(!this.MMovable.isAntiGravity()){
         let footstep_sounds = ["footstep_1", "footstep_2", "footstep_3"]
-        ct.sounds.spawn(footstep_sounds[Math.floor(Math.random() * Math.floor(max))])
+        ct.sound.spawn(footstep_sounds[Math.floor(Math.random() * Math.floor(3))])
     }
 });
 this.MEvent.on('moveEnd', () => {
@@ -76,9 +93,11 @@ this.MEvent.on('moveEnd', () => {
     // console.log("Oxygen: ", this.remainingOxygen);
     
     if(this.remainingOxygen < 0) {
+        this.dyingMenu();
         // console.log("DYYYYYYYYING, breathing is not an option !!!");
     }
     if(this.currentRadioactivity > this.MAX_RADIOACTIVITY) {
+        this.dyingMenu();
         // console.log("DYYYYYYYYING, Tchernobyl got you !!!");
     }
     
