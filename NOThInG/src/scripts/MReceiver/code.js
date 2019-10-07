@@ -3,7 +3,7 @@
  *   - 'every': all signals must be true to activate, one false deactivate
  *   - 'some': one signal must be true to activate, all false deactivate
  */
-const MReceiver = (self, signal, behaviour='some') => {
+const MReceiver = (self, signal, behaviour='some', tff) => {
     MEvent(self);
     
     let active = false;
