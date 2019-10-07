@@ -1,0 +1,17 @@
+{
+  "name": "1_1_HelloWorld",
+  "width": 800,
+  "height": 600,
+  "backgrounds": [],
+  "copies": [],
+  "tiles": [
+    {
+      "depth": -10,
+      "tiles": []
+    }
+  ],
+  "uid": "e7cc765e-c7b0-4eef-8b29-7d34a56a9820",
+  "thumbnail": "7d34a56a9820",
+  "gridX": 64,
+  "gridY": 64
+}

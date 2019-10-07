@@ -1,0 +1,17 @@
+{
+  "name": "1_2_OnToTheGame",
+  "width": 800,
+  "height": 600,
+  "backgrounds": [],
+  "copies": [],
+  "tiles": [
+    {
+      "depth": -10,
+      "tiles": []
+    }
+  ],
+  "uid": "fb3e3786-dc98-47a4-a3fd-277996e4080a",
+  "thumbnail": "277996e4080a",
+  "gridX": 64,
+  "gridY": 64
+}

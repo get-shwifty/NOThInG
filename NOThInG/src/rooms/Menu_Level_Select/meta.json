@@ -1,0 +1,29 @@
+{
+  "name": "Menu_Level_Select",
+  "width": 900,
+  "height": 900,
+  "backgrounds": [
+    {
+      "depth": -10,
+      "texture": "ba7943c6-49aa-446f-a25c-b284078dfc41",
+      "extends": {}
+    }
+  ],
+  "copies": [
+    {
+      "x": 448,
+      "y": 192,
+      "uid": "f9170417-d55e-48bb-9523-82285aacba66"
+    }
+  ],
+  "tiles": [
+    {
+      "depth": -10,
+      "tiles": []
+    }
+  ],
+  "uid": "4e69bc1f-57a3-4369-8aac-b6f96e3ab790",
+  "thumbnail": "b6f96e3ab790",
+  "gridX": 64,
+  "gridY": 64
+}
