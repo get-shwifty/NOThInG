@@ -11,9 +11,11 @@ if(ct.actions.Up.pressed) {
     if(objInFront.MElement) {
         this.MContainer.addElement(objInFront);
     } else if (objInFront.MContainer) {
-        let obj = objInFront.MContainer.popElement();
-        if (obj) {
-            this.MContainer.addElement(obj);
+        if (this.MContainer.hasFreeSlot()) {
+            let elDrop = objInFront.MContainer.popElement();
+            if (elDrop) {
+                this.MContainer.addElement(elDrop);
+            }
         }
     }
 } else if(ct.actions.Drop.pressed) {
