@@ -1,5 +1,10 @@
 if (this.MOpenable.isOpen() && !this.isOpening){
-    this.tex = 'Porte_Ouverture';
-}else{
-    this.tex = 'Porte_Fermee';
+    playAnimation(this, 'Porte_Ouverture', 0.15)
+    this.loop = false;
+    this.isOpening = true;
+}
+else if(!this.MOpenable.isOpen() && !this.isOpening){
+    playAnimation(this, 'Porte_Fermeture', 0.15)
+    this.loop = false;
+    this.isOpening = true;
 }
