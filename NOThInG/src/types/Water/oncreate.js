@@ -4,8 +4,10 @@ MZone(this, 'all', el => {
         el.kill = true;
         utils.spawn('Ice', this);
     } else if(!el.MMovable || !el.MMovable.isAntiGravity()) {
-        console.log('kill', el);
         el.kill = true;
+        if(el === getPlayer()) {
+            getPlayer().dyingMenu();
+        }
     }
 });
 

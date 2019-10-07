@@ -8,8 +8,7 @@ MZone(this, [EL.G], (el) => {
 setTimeout(() => {
     getPlayer().MEvent.on('step', () => {
         if(utils.distance(this, getPlayer()) === 0) {
-            // kill human
-            console.log('kill');
+            getPlayer().dyingMenu();
         }
     });
 })
