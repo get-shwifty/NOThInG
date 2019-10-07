@@ -1,4 +1,4 @@
-if (ct.actions.Debug_Next_Level.pressed) {
+if (utils.distance(this, getPlayer()) === 0) {
     //this should be triggered by a collision with the player instead
     PIXI.ticker.shared.speed = 0;
     ct.pixiApp.ticker.speed = 0;
