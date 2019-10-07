@@ -1,0 +1,28 @@
+{
+  "name": "select_level",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    55,
+    55
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 111,
+  "imgHeight": 111,
+  "width": 111,
+  "height": 111,
+  "offx": 0,
+  "offy": 0,
+  "origname": "iec7f68fa-1de4-4546-b2b5-fdd4f22d9783.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\select_level.png",
+  "shape": "rect",
+  "left": 55,
+  "right": 56,
+  "top": 55,
+  "bottom": 56,
+  "uid": "ec7f68fa-1de4-4546-b2b5-fdd4f22d9783"
+}
