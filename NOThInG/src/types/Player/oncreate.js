@@ -59,7 +59,10 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 
 // *** MEvent : moving ***
 this.MEvent.on('moveStart', () => {
-    
+    if(!this.MMovable.isAntiGravity()){
+        let footstep_sounds = ["footstep_1", "footstep_2", "footstep_3"]
+        ct.sounds.spawn(footstep_sounds[Math.floor(Math.random() * Math.floor(max))])
+    }
 });
 this.MEvent.on('moveEnd', () => {
     if(!this.breathing) {
