@@ -75,7 +75,7 @@ this.dyingMenu = () => {
     background.depth = 0;
     background.alpha = 0.9;
     
-    ct.types.make("UI_Menu", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2));
+    ct.types.make("UI_Lose", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2));
     ct.types.make("UI_Restart", ct.viewWidth / 2, 6 * 64 + ((((270 + 32) * ct.viewHeight / 900) - (270 + 32))));
     ct.types.make("UI_Select", ct.viewWidth / 2, 8 * 64 + ((((270 + 32 + 64) * ct.viewHeight / 900) - (270 + 32 + 64))));
     ct.types.make("UI_Menu_Button", ct.viewWidth / 2, 10 * 64 + ((((270 + 5 * 32) * ct.viewHeight / 900) - (270 + 5 * 32))));

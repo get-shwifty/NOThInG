@@ -5,6 +5,7 @@ if (ct.mouse.pressed) {
         if (this.nextRoom) {
             ct.rooms.switch(this.nextRoom);
         } else {
+            ct.types.make("End");
             console.log("WIIIIIIIIN");
         }
     }
