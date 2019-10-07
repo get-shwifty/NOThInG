@@ -1,4 +1,4 @@
-const MMovable = (self) => {
+const MMovable = (self, checkOrientation=false) => {
     MEvent(self);
     
     const moves = [];
@@ -11,7 +11,6 @@ const MMovable = (self) => {
             direction: utils.getDirRotationDeg(dir),
             finalPos: utils.move(getFuturePos(), dir)
         });
-        self.MMovable.moving = true;
     };
     
     const getFuturePos = () => {
@@ -26,6 +25,10 @@ const MMovable = (self) => {
         dir: DIR.DOWN,
         moving: false,
         onStep() {
+            if(!self.MMovable.moving && moves.length > 0) {
+                self.MMovable.moving = true;
+                self.MEvent.emit('moveStart');
+            }
             if(self.MMovable.moving) {
                 const move = moves[0];
 
@@ -39,13 +42,14 @@ const MMovable = (self) => {
                     self.MEvent.emit('step');
 
                     if(self.MMovable.isAntiGravity()) {
-                        self.MMovable.goAntiGravity(self.MMovable.dir, true); // Try to move again if in gravity
+                        self.MMovable.goAntiGravity(self.MMovable.dir); // Try to move again if in gravity
                     }
 
                     if(moves.length > 0) {
                         self.MMovable.onStep();
                     } else {
                         self.MMovable.moving = false;
+                        self.MEvent.emit('moveEnd');
                     }
                 } else {
                     self.speed = move.speed;
@@ -53,20 +57,22 @@ const MMovable = (self) => {
                 }
             }
         },
-        go(dir, propagation=false) {
-            if(self.MMovable.isAntiGravity()) {
-                return self.MMovable.goAntiGravity(dir, propagation);
-            }
-            
+        go(dir) {
             if(self.MMovable.moving) {
                 return false;
             }
-            self.MMovable.dir = dir;
+            
+            if(self.MMovable.dir !== dir) {
+                self.MMovable.dir = dir;
+                if(checkOrientation && self.MMovable.isAntiGravity()) {
+                    return false;
+                }
+            }
             
             const other = self.MMovable.canGoDir(dir);
             if(other) {
                 if(other !== true) {
-                    if(other.MMovable.go(dir, true) && !propagation) {
+                    if(other.MMovable.go(dir, false)) {
                         move(dir);
                         return true;
                     }
@@ -81,38 +87,22 @@ const MMovable = (self) => {
         isAntiGravity() {
             return self.MContainer && self.MContainer.has(EL.G);
         },
-        goAntiGravity(dir, propagation=false) {
-            if(!propagation && self.MMovable.moving) {
-                return false;
-            }
-            if(self.MMovable.dir !== dir) {
-                self.MMovable.dir = dir;
-                if(!propagation) {
-                    return false;
-                }
-            }
-
+        goAntiGravity(dir) {
             const other = self.MMovable.canGoDirGravity(dir);
             if(!other) { // player is blocked
                 return false;
             } else if(other !== true) { // player is blocked by a gravity movable object
-                other.MMovable.go(dir, true);
+                other.MMovable.goAntiGravity(dir);
                 return false;
             } else { // player can freely move
                 move(dir);
                 return true;
             }
-
-            return somethingMoved;
         },
         
         /// Helpers
         
         canGoDir(dir) {
-            if(self.MMovable.isAntiGravity()) {
-                return self.MMovable.canGoDirGravity(dir);
-            }
-
             if(utils.getNextDir(getFuturePos(), dir, 'MObstacle') ) {
                 return false;
             }
@@ -136,7 +126,7 @@ const MMovable = (self) => {
 
             const movableObject = utils.getNextDir(getFuturePos(), dir, 'MMovable');
             if(movableObject) {
-                if(movableObject.MMovable.canGoDir(dir)) {
+                if(movableObject.MMovable.isAntiGravity()) {
                     return movableObject;
                 } else {
                     return false;

@@ -1,9 +1,11 @@
-MMovable(this);
+MMovable(this, true);
 MContainer(this, 4);
-// hack for empty sprite
-this.tex = 'Porte_Ouverte'
-this.body = this.addChild(new ct.types.Copy())
-this.shadow = this.addChild(new ct.types.Copy())
-this.shadow.tex = 'Shadow'
-this.count = 0
-// this.MContainer.addElementByType('G');
+
+this.body.tex = -1;
+
+this.MEvent.on('moveStart', () => {
+    console.log("moveStart");
+});
+this.MEvent.on('moveEnd', () => {
+    console.log("moveEnd");
+});

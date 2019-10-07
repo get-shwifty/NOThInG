@@ -1,6 +1,13 @@
-const MContainer =  (self, maxSlots) => {
+const MContainer =  (self, maxSlots, shadowScale=1) => {
     const objectsTypes = [];
     const pixiObjects = [];
+    
+    self.body = self.addChild(new ct.types.Copy());
+    self.shadow = self.addChild(new ct.types.Copy());
+    self.body.tex = self.tex
+    self.tex = -1
+    self.shadow.tex = 'Shadow';
+    let frameCount = 0;
     
     self.MContainer = {
         has(cst) {
@@ -94,6 +101,15 @@ const MContainer =  (self, maxSlots) => {
                     obj.x = - TILE_SIZE / 2 + Math.abs(obj.scale.x) * TILE_SIZE * (i + 0.5);
                     obj.y = - TILE_SIZE / 2 + Math.abs(obj.scale.y) * TILE_SIZE / 2;
                 }
+            }
+            
+            self.shadow.visible = false
+            self.body.y = 0;
+            if (self.MMovable.isAntiGravity()) {
+                self.body.y = -15*shadowScale + Math.sin(frameCount / (4*shadowScale)) * 2.5;
+                self.shadow.visible = true;
+                self.shadow.scale.x += Math.sin(frameCount / (4*shadowScale)) * 0.01;
+                frameCount++;
             }
         }
         
