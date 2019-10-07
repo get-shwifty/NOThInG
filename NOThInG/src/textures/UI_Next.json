@@ -1,0 +1,28 @@
+{
+  "name": "UI_Next",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    146,
+    32
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 293,
+  "imgHeight": 65,
+  "width": 293,
+  "height": 65,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i0fcff187-de6a-46b3-a369-8acbacff0f2d.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\71872035_547645452443415_7125323230503501824_n.png",
+  "shape": "rect",
+  "left": 146,
+  "right": 147,
+  "top": 32,
+  "bottom": 33,
+  "uid": "0fcff187-de6a-46b3-a369-8acbacff0f2d"
+}

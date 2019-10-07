@@ -18,18 +18,22 @@ const ANTI_DIR = {
 };
 
 const EL = {
-    G:{
+    G: {
         tex: "El_G",
         type: "El_Anti_Gravity"
     },
-    Th:{
+    Th: {
         tex: "El_Th",
         type: "El_Thorium"
     },
-    O:{
+    O: {
         tex: "El_O",
         type: "El_Oxygen"
     },
+    In: {
+        tex: "El_In",
+        type: "El_In"
+    }
 };
 
 const SIGNAL = {
@@ -37,3 +41,10 @@ const SIGNAL = {
 };
 
 const NON_LEVEL_ROOMS = ["Menu", "Menu_Level_Select", "Final_Screen"];
+
+const SPLASH_POS = {
+    "UI_Menu": { x : 0, y : 300},
+    "First_Box": { x : 0, y : 450},
+    "Second_Box": { x : 0, y : 540},
+    "Third_Box": { x : 0, y : 630},
+};

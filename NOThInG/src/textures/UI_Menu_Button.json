@@ -1,0 +1,28 @@
+{
+  "name": "UI_Menu_Button",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    145,
+    30
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 290,
+  "imgHeight": 60,
+  "width": 290,
+  "height": 60,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i6146ff5e-5c7e-4b69-b36c-1c0cfa4fca4d.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\72696891_2759249207438627_1957009132686934016_n.png",
+  "shape": "rect",
+  "left": 145,
+  "right": 145,
+  "top": 30,
+  "bottom": 30,
+  "uid": "6146ff5e-5c7e-4b69-b36c-1c0cfa4fca4d"
+}
