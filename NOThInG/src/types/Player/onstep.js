@@ -7,7 +7,15 @@ if(ct.actions.Up.pressed) {
 } else if(ct.actions.Right.pressed) {
     this.MMovable.go(DIR.RIGHT);
 } else if(ct.actions.Take.pressed) {
-
+    let objInFront = utils.getNextDir(this, this.MMovable.dir);
+    if(objInFront.MElement) {
+        this.MContainer.addElement(objInFront);
+    } else if (objInFront.MContainer) {
+        let obj = objInFront.MContainer.popElement();
+        if (obj) {
+            this.MContainer.addElement(obj);
+        }
+    }
 } else if(ct.actions.Drop.pressed) {
-
+    this.MContainer.dropElement(this.MMovable.dir);
 }

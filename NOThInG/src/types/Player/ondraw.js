@@ -30,7 +30,7 @@ else if(this.MMovable.dir === DIR.DOWN) {
     else {
         playAnimation(this, 'Player_Iddle_Front')
     }
-} 
+}
 else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
     if (this.MMovable.isAntiGravity()) {
         this.tex = 'Player_Gravity_Side';
@@ -43,3 +43,6 @@ else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
         playAnimation(this, 'Player_Iddle_Side')
     }
 } 
+
+
+this.MContainer.onDraw();
