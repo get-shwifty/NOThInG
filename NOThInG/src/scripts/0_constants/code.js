@@ -33,6 +33,10 @@ const EL = {
     In: {
         tex: "El_In",
         type: "El_In"
+    },
+    N: {
+        tex: "El_N",
+        type: "El_N"
     }
 };
 

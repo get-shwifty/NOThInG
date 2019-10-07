@@ -6,12 +6,13 @@ MZone(this, [EL.G], (el) => {
 });
 
 setTimeout(() => {
-    getPlayer().MEvent.on('step', () => {
-        if(utils.distance(this, getPlayer()) === 0) {
-            getPlayer().dyingMenu();
+    const player = getPlayer();
+    player.MEvent.on('step', () => {
+        if(utils.distance(this, getPlayer()) === 0 && !player.MContainer.has(EL.N)) {
+            player.dyingMenu();
         }
     });
-})
+});
 
 this.animationSpeed = 0.12;
 this.play();
