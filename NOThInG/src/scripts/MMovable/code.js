@@ -37,7 +37,7 @@ const MMovable = (self, gravity) => {
                     self.MEvent.emit('step');
                     if(moves.length === 0) {
                         self.MMovable.moving = false;
-                        self.MEvent.emit('endmoving');
+                        self.MEvent.emit('endMoving');
                     } else {
                         self.MMovable.onStep();
                     }
@@ -61,8 +61,9 @@ const MMovable = (self, gravity) => {
             if(other) {
                 if(other !== true) {
                     other.MMovable.go(dir);
+                } else {
+                    move(dir);
                 }
-                move(dir);
                 
                 return true;
             } else {
@@ -78,9 +79,6 @@ const MMovable = (self, gravity) => {
             }
             
             self.MMovable.dir = dir;
-            if(utils.getNextDir(getFuturePos(), dir, 'MObstacle')) {
-                return false;
-            }
             
             // let hasSupport = false;
             // const movableAntiGravityObjects = []
@@ -103,13 +101,13 @@ const MMovable = (self, gravity) => {
             // }
             
             let somethingMoved = false;
-            while(true) {
+            for(let k = 0; k < 50; k++) {
                 const other = self.MMovable.canGoDirGravity(dir);
                 if(!other) { // player is blocked
                     break;
                 } else if(other !== true) { // player is blocked by a gravity movable object
                     if(self.MMovable.moving) {
-                        self.MEvent.once('endmoving', () => {
+                        self.MEvent.once('endMoving', () => {
                             other.MMovable.goAntiGravity(dir, true);
                         });
                     } else {
@@ -134,7 +132,7 @@ const MMovable = (self, gravity) => {
         /// Helpers
         
         canGoDir(dir) {
-            if(utils.getNextDir(getFuturePos(), dir, 'MObstacle')) {
+            if(utils.getNextDir(getFuturePos(), dir, 'MObstacle') ) {
                 return false;
             }
             
@@ -150,7 +148,8 @@ const MMovable = (self, gravity) => {
             }
         },
         canGoDirGravity(dir) {
-            if(utils.getNextDir(getFuturePos(), dir, 'MObstacle')) {
+            const obstacle = utils.getNextDir(getFuturePos(), dir, 'MObstacle');
+            if(obstacle && obstacle.MObstacle.obstacleInAntiGravity) {
                 return false;
             }
             

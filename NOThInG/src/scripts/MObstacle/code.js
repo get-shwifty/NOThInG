@@ -1,7 +1,7 @@
 
-const MObstacle = (() => {
-
-    return (self) => {
-        self.MObstacle = {};
+const MObstacle = (self, obstacleInAntiGravity = true) => {
+    
+    self.MObstacle = {
+        obstacleInAntiGravity
     };
-})();
+};

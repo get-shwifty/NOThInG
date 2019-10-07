@@ -21,7 +21,7 @@ if(this.MMovable.dir === DIR.UP) {
 } 
 else if(this.MMovable.dir === DIR.DOWN) {
     if (this.MMovable.isAntiGravity()) {
-        this.tex = 'Play_Gravity_Front'
+        this.tex = 'Player_Gravity_Front';
     }
     else if(this.moving){
         this.animationSpeed = 0.3
