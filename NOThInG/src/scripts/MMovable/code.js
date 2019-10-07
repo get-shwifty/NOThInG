@@ -68,7 +68,7 @@ const MMovable = (self, onlyOnGravity=false, checkOrientation=false) => {
             
             if(self.MMovable.dir !== dir) {
                 self.MMovable.dir = dir;
-                if(checkOrientation && self.MMovable.isAntiGravity()) {
+                if(checkOrientation) {
                     return false;
                 }
             }
