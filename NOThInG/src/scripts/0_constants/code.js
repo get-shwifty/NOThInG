@@ -18,17 +18,21 @@ const ANTI_DIR = {
 };
 
 const EL = {
-    G:{
+    G: {
         tex: "El_G",
         type: "El_Anti_Gravity"
     },
-    Th:{
+    Th: {
         tex: "El_Th",
         type: "El_Thorium"
     },
-    O:{
+    O: {
         tex: "El_O",
         type: "El_Oxygen"
+    },
+    In: {
+        tex: "El_In",
+        type: "El_In"
     }
 };
 

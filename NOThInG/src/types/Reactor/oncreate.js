@@ -1,6 +1,6 @@
 MMovable(this, true);
 MContainer(this, 1);
-const transmitter = MTransmitter(this, SIGNAL.ELECTRICITY, 2);
+const transmitter = MTransmitter(this, SIGNAL.ELECTRICITY, 1);
 
 const isTh = obj => obj.MElement.getType().type === EL.Th.type;
 

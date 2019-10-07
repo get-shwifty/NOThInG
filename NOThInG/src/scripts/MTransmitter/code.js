@@ -8,11 +8,9 @@ const MTransmitter = (self, signal, distance) => {
     self.MTransmitter[signal] = {
         activate() {
             active = true;
-            self.MEvent.emit('signal', signal, true);
         },
         deactivate() {
             active = false;
-            self.MEvent.emit('signal', signal, false);
         },
         isActive() {
             return active;
