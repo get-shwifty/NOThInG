@@ -57,6 +57,15 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
     }
 });
 
+// *** Dying and Menu ***
+function dyingMenu() {
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
+    ct.types.make("UI_Menu", ct.viewWidth / 2, SPLASH_POS.UI_Menu.y);
+    ct.types.make("UI_Restart", ct.viewWidth / 2, SPLASH_POS.First_Box.y);
+    ct.types.make("UI_Menu_Button", ct.viewWidth / 2, SPLASH_POS.Second_Box.y);
+}
+
 // *** MEvent : moving ***
 this.MEvent.on('moveStart', () => {
     
@@ -73,9 +82,11 @@ this.MEvent.on('moveEnd', () => {
     // console.log("Oxygen: ", this.remainingOxygen);
     
     if(this.remainingOxygen < 0) {
+        dyingMenu();
         // console.log("DYYYYYYYYING, breathing is not an option !!!");
     }
     if(this.currentRadioactivity > this.MAX_RADIOACTIVITY) {
+        dyingMenu();
         // console.log("DYYYYYYYYING, Tchernobyl got you !!!");
     }
     

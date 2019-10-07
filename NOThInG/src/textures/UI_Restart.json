@@ -1,0 +1,28 @@
+{
+  "name": "UI_Restart",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    100,
+    21
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 200,
+  "imgHeight": 44,
+  "width": 200,
+  "height": 42,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ibeaea6d2-f420-45b6-8989-29f78a48e5c3.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\72086429_939117806469991_9013346164690386944_n.png",
+  "shape": "rect",
+  "left": 100,
+  "right": 100,
+  "top": 21,
+  "bottom": 21,
+  "uid": "beaea6d2-f420-45b6-8989-29f78a48e5c3"
+}
