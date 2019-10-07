@@ -1,7 +1,7 @@
 {
   "name": "Menu_Level_Select",
-  "width": 900,
-  "height": 900,
+  "width": 2142,
+  "height": 1428,
   "backgrounds": [
     {
       "depth": -10,
@@ -11,9 +11,11 @@
   ],
   "copies": [
     {
-      "x": 448,
-      "y": 192,
-      "uid": "f9170417-d55e-48bb-9523-82285aacba66"
+      "x": 1088,
+      "y": 448,
+      "uid": "f9170417-d55e-48bb-9523-82285aacba66",
+      "tx": 2,
+      "ty": 2
     }
   ],
   "tiles": [

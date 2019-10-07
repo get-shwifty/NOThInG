@@ -1,8 +1,8 @@
 let x = 0;
 let max_x =  5;
 
-let initial_x = 200;
-let initial_y = 400;
+let initial_x = 850;
+let initial_y = 750;
 
 
 

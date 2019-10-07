@@ -8,9 +8,6 @@
     "sound.howler": {},
     "akatemplate": {
       "csscss": "body {\n    background: #000;\n}"
-    },
-    "fittoscreen": {
-      "mode": "scaleFit"
     }
   },
   "skeletons": [],
