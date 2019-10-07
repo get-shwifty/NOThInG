@@ -55,24 +55,18 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
             return null;
         },
         dropElement(dir) {
-            if (objectsTypes.length == 0) {
-                return false;
-            }
-            
-            const contInFront = utils.getNextDir(self, dir, "MContainer");
-            const zoneInFront = utils.getNextDir(self, dir, "MZone");
-            
-            if (contInFront) {
-                if(contInFront.MContainer.hasFreeSlot()) {
-                   contInFront.MContainer.addElement(this.popElement());
+            let contInFront = utils.getNextDir(self, dir, "MContainer");
+            if (contInFront && contInFront.MContainer && contInFront.MContainer.hasFreeSlot()) {
+                let elDrop = this.popElement();
+                if (elDrop) {
+                    contInFront.MContainer.addElement(elDrop);
                 }
-            } else if (zoneInFront) {
-                const lastObject = objectsTypes[objectsTypes.length - 1];
-                if(zoneInFront.MZone.canDrop(lastObject)) {
-                    zoneInFront.MZone.drop(this.popElement());
+            } else if (!contInFront, !utils.getNextDir(self, dir)) {
+                let elDrop = this.popElement();
+                if (elDrop) {
+                    let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);
+                    utils.move(newEl, dir);
                 }
-            } else {
-                utils.spawn(this.popElement().MElement.getType(), self, dir);
             }
         },
         hasFreeSlot() {
@@ -116,7 +110,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
             
             self.shadow.visible = false
             self.body.y = 0;
-            if (self.MContainer.has(EL.G)) {
+            if (self.MContainer && self.MContainer.has(EL.G)) {
                 self.body.y = -15*shadowScale + Math.sin(frameCount / (4*shadowScale)) * 2.5;
                 self.shadow.visible = true;
                 self.shadow.scale.x += Math.sin(frameCount / (4*shadowScale)) * 0.01;

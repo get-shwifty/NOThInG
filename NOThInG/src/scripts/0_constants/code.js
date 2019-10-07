@@ -29,7 +29,7 @@ const EL = {
     O:{
         tex: "El_O",
         type: "El_Oxygen"
-    }
+    },
 };
 
 const SIGNAL = {

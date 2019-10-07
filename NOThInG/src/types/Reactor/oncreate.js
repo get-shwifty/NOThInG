@@ -1,4 +1,4 @@
-MMovable(this, true);
+MMovable(this);
 MContainer(this, 1);
 const transmitter = MTransmitter(this, SIGNAL.ELECTRICITY, 2);
 

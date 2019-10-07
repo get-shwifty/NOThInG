@@ -1,4 +1,4 @@
-const MMovable = (self, onlyOnGravity=false, checkOrientation=false) => {
+const MMovable = (self, checkOrientation=false) => {
     MEvent(self);
     
     const moves = [];
@@ -60,9 +60,6 @@ const MMovable = (self, onlyOnGravity=false, checkOrientation=false) => {
         },
         go(dir) {
             if(self.MMovable.moving) {
-                return false;
-            }
-            if(onlyOnGravity && !self.MMovable.isAntiGravity()) {
                 return false;
             }
             
