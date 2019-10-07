@@ -7,6 +7,7 @@ const MContainer =  (self, maxSlots, shadowScale=1) => {
     self.body.tex = self.tex
     self.tex = -1
     self.shadow.tex = 'Shadow';
+    self.shadow.visible = false;
     let frameCount = 0;
     
     self.MContainer = {
@@ -90,16 +91,18 @@ const MContainer =  (self, maxSlots, shadowScale=1) => {
                 // TODO positions
             }
         },
-        onDraw() {
-            for(const [i, obj] of pixiObjects.entries()) {
-                obj.scale.x = 0.4 / self.scale.x;
-                obj.scale.y = 0.4 / self.scale.y;
-                if(self.scale.x < 0) {
-                    obj.x = TILE_SIZE / 2 - Math.abs(obj.scale.x) * TILE_SIZE * ( i + 0.5);
-                    obj.y = - TILE_SIZE / 2 + Math.abs(obj.scale.y) * TILE_SIZE / 2;
-                } else {
-                    obj.x = - TILE_SIZE / 2 + Math.abs(obj.scale.x) * TILE_SIZE * (i + 0.5);
-                    obj.y = - TILE_SIZE / 2 + Math.abs(obj.scale.y) * TILE_SIZE / 2;
+        onDraw(entity) {
+            if (entity == "Player" || entity == "Box") {
+                for(const [i, obj] of pixiObjects.entries()) {
+                    obj.scale.x = 0.4 / self.scale.x;
+                    obj.scale.y = 0.4 / self.scale.y;
+                    if(self.scale.x < 0) {
+                        obj.x = TILE_SIZE / 2 - Math.abs(obj.scale.x) * TILE_SIZE * ( i + 0.5);
+                        obj.y = - TILE_SIZE / 2 + Math.abs(obj.scale.y) * TILE_SIZE / 2;
+                    } else {
+                        obj.x = - TILE_SIZE / 2 + Math.abs(obj.scale.x) * TILE_SIZE * (i + 0.5);
+                        obj.y = - TILE_SIZE / 2 + Math.abs(obj.scale.y) * TILE_SIZE / 2;
+                    }
                 }
             }
             

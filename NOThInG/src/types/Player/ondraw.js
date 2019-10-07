@@ -1,11 +1,5 @@
-const playAnimation = function(obj, animName, animSpeed){
-    if (obj.tex !== animName){
-        obj.animationSpeed = animSpeed
-        obj.tex = animName;
-        obj.play();
-    }
-}
 const IDDLE_SPEED = 0.3;
+
 this.scale.x = this.MMovable.dir === DIR.LEFT ? -1: 1;
 
 
@@ -35,4 +29,4 @@ else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
 } 
 
 
-this.MContainer.onDraw();
+this.MContainer.onDraw("Player");
