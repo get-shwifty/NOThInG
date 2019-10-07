@@ -14,6 +14,5 @@ setTimeout(() => {
     });
 })
 
-
 this.animationSpeed = 0.12;
 this.play();

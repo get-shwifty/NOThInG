@@ -1,4 +1,4 @@
-MMovable(this, true);
+MMovable(this, false, true);
 MContainer(this, 4, 'list');
 
 this.body.tex = -1;
