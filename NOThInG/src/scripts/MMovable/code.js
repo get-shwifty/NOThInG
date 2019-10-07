@@ -73,6 +73,9 @@ const MMovable = (self, checkOrientation=false) => {
             const other = self.MMovable.canGoDir(dir);
             if(other) {
                 if(other !== true) {
+                    if(self.MMovable.isAntiGravity()) {
+                        return false;
+                    }
                     if(other.MMovable.go(dir, false)) {
                         move(dir);
                         return true;
