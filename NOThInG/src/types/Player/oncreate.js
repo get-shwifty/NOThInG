@@ -54,10 +54,10 @@ this.MEvent.on('moveEnd', () => {
     // console.log("Oxygen: ", this.remainingOxygen);
     
     if(this.remainingOxygen < 0) {
-        console.log("DYYYYYYYYING, breathing is not an option !!!");
+        // console.log("DYYYYYYYYING, breathing is not an option !!!");
     }
     if(this.currentRadioactivity > this.MAX_RADIOACTIVITY) {
-        console.log("DYYYYYYYYING, Tchernobyl got you !!!");
+        // console.log("DYYYYYYYYING, Tchernobyl got you !!!");
     }
     
     if(this.MMovable.isAntiGravity()){
