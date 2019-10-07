@@ -15,10 +15,12 @@ const MTransmitter = (self, signal, distance) => {
         isActive() {
             return active;
         },
-        onStep() {
+        onStep(force) {
             for(const el of utils.getUnderDistance(self, distance, 'MReceiver')) {
                 if(el.MReceiver[signal]) {
+                    if(force) el.MReceiver[signal].onStep();
                     el.MReceiver[signal].receive(active);
+                    if(force) el.MReceiver[signal].onStep();
                 }
             }
         }

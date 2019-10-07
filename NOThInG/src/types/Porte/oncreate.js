@@ -1,4 +1,4 @@
-const receiver = MReceiver(this, SIGNAL.ELECTRICITY, 'some');
+const receiver = MReceiver(this, SIGNAL.ELECTRICITY, 'some', 'PORTE');
 MObstacle(this, true);
 
 this.MEvent.on('signal', (signal, opened) => {

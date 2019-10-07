@@ -23,13 +23,15 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
         },
         addElement(other) {
             if(other && objectsTypes.length < maxSlots) {
+                objectsTypes.push(other);
+                other.kill = true;
+                
                 if (self.MEvent) {
-                    self.MEvent.emit("elementTaken", other);
+                    self.MEvent.emit("elementTaken", other, objectsTypes);
                 } else {
                     console.log("No MEvent Mixins, can't emit message 'elementTaken'");
                 }
-                objectsTypes.push(other);
-                other.kill = true;
+                
                 self.MContainer.updateView();
                 return true;
             }
@@ -49,6 +51,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
                 } else {
                     console.log("No MEvent Mixins, can't emit message 'elementTaken'");
                 }
+                
                 self.MContainer.updateView();
                 return obj;
             }
