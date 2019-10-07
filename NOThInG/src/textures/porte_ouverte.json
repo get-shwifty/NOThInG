@@ -1,0 +1,28 @@
+{
+  "name": "porte_ouverte",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i96d8deb3-3d8c-40dc-a708-bbbc7f13a4e3.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\porte_ouverte.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 119,
+  "top": 0,
+  "bottom": 119,
+  "uid": "96d8deb3-3d8c-40dc-a708-bbbc7f13a4e3"
+}

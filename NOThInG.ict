@@ -84,6 +84,17 @@
     "highDensity": false,
     "pixelatedrender": false
   },
-  "fonts": [],
-  "startroom": "97e034c3-3517-4bd1-a85a-f9e08010f566"
+  "fonts": [
+    {
+      "typefaceName": "big_noodle_titling",
+      "weight": 400,
+      "italic": false,
+      "uid": "9437d5b1-78cf-4bd3-b186-2fae0a0f2587",
+      "origname": "f9437d5b1-78cf-4bd3-b186-2fae0a0f2587.ttf",
+      "lastmod": 1570473913897
+    }
+  ],
+  "startroom": "70d941bf-6f8e-497a-b273-4a39f6ab0720",
+  "styletick": null,
+  "palette": []
 }
