@@ -33,13 +33,13 @@ if (ct.actions.Restart.pressed) {
 if (ct.actions.Escape.pressed) {
     if (!this.pause) {
         this.pause = true;
-        
+        console.log(ct.viewHeight / 900);
         PIXI.ticker.shared.speed = 0;
         ct.pixiApp.ticker.speed = 0;
-        this.arrMenu.push(ct.types.make("UI_Menu", ct.viewWidth / 2, SPLASH_POS.UI_Menu.y));
-        this.arrMenu.push(ct.types.make("UI_Restart", ct.viewWidth / 2, SPLASH_POS.First_Box.y));
-        this.arrMenu.push(ct.types.make("UI_Select", ct.viewWidth / 2, SPLASH_POS.Second_Box.y));
-        this.arrMenu.push(ct.types.make("UI_Menu_Button", ct.viewWidth / 2, SPLASH_POS.Third_Box.y));
+        this.arrMenu.push(ct.types.make("UI_Menu", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2)));
+        this.arrMenu.push(ct.types.make("UI_Restart", ct.viewWidth / 2, 6 * 64 + ((((270 + 32) * ct.viewHeight / 900) - (270 + 32)))));
+        this.arrMenu.push(ct.types.make("UI_Select", ct.viewWidth / 2, 8 * 64 + ((((270 + 32 + 64) * ct.viewHeight / 900) - (270 + 32 + 64)))));
+        this.arrMenu.push(ct.types.make("UI_Menu_Button", ct.viewWidth / 2, 10 * 64 + ((((270 + 5 * 32) * ct.viewHeight / 900) - (270 + 5 * 32)))));
     } else if (!this.dead) {
         this.pause = false;
         
