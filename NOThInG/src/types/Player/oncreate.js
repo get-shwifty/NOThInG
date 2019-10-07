@@ -26,7 +26,7 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 
 // *** Radioactivity ***
 this.MAX_RADIOACTIVITY = 5; 
-this.currentRaioactivity = 0;
+this.currentRadioactivity = 0;
 this.numRadEl = 0;
 
 this.MEvent.on("elementTaken", (el) => {
@@ -43,20 +43,23 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 
 // *** MEvent : moving ***
 this.MEvent.on('moveStart', () => {
-    if(this.remainingOxygen === 0) {
-        console.log("DYYYYYYYYING, breathing is not an option !!!");
-    }
-    if(this.currentRaioactivity === this.MAX_RADIOACTIVITY) {
-        console.log("DYYYYYYYYING, Tchernobyl got you !!!");
-    }
+    
 });
 this.MEvent.on('moveEnd', () => {
     if(!this.breathing) {
         this.remainingOxygen--;
     }
-    this.currentRaioactivity += this.numRadEl;
-    console.log("Radioactivity: ", this.currentRaioactivity);
+    this.currentRadioactivity += this.numRadEl;
+    // console.log("Radioactivity: ", this.currentRadioactivity);
     // console.log("Oxygen: ", this.remainingOxygen);
+    
+    if(this.remainingOxygen < 0) {
+        console.log("DYYYYYYYYING, breathing is not an option !!!");
+    }
+    if(this.currentRadioactivity > this.MAX_RADIOACTIVITY) {
+        console.log("DYYYYYYYYING, Tchernobyl got you !!!");
+    }
+    
     if(this.MMovable.isAntiGravity()){
         if(utils.getNextDir(this, this.MMovable.dir, 'MObstacle')) {
             ct.sound.spawn("impact") ;
