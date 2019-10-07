@@ -1,6 +1,5 @@
 MMovable(this, false);
 MContainer(this, 4);
-this.animationSpeed = 0.08;
 this.moving = false;
 setInterval(() => {
     this.moving = !this.moving;

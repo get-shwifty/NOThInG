@@ -5,7 +5,7 @@ const playAnimation = function(obj, animName){
     }
 }
 
-this.animationSpeed = 0.08
+this.animationSpeed = 0.04
 this.scale.x = this.MMovable.dir === DIR.LEFT ? -1: 1;
 
 if(this.MMovable.dir === DIR.UP) {
