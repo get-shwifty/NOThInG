@@ -58,6 +58,18 @@
       "uid": "6320908d-b1cc-4f44-9f6b-10e3fa29186e",
       "origname": "s6320908d-b1cc-4f44-9f6b-10e3fa29186e.ogg",
       "lastmod": 1570452221572
+    },
+    {
+      "name": "victory",
+      "uid": "27deada2-a5c7-432b-a2a0-bd793b002c44",
+      "origname": "s27deada2-a5c7-432b-a2a0-bd793b002c44.ogg",
+      "lastmod": 1570469729104
+    },
+    {
+      "name": "defeat",
+      "uid": "32d4d54d-4ada-4412-af3a-efc7f9a61aed",
+      "origname": "s32d4d54d-4ada-4412-af3a-efc7f9a61aed.ogg",
+      "lastmod": 1570469746479
     }
   ],
   "starting": 0,
