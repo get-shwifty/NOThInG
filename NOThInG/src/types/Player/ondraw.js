@@ -33,6 +33,3 @@ else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
         playAnimation(this.body, 'Player_Move_Side', IDDLE_SPEED);
     }
 } 
-
-
-this.MContainer.onDraw();

@@ -1,4 +1,6 @@
 const MContainer =  (self, maxSlots, shadowScale=1) => {
+    MEvent(self);
+
     const objectsTypes = [];
     const pixiObjects = [];
     

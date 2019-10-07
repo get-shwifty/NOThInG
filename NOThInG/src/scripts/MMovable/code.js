@@ -54,6 +54,7 @@ const MMovable = (self, checkOrientation=false) => {
                 } else {
                     self.speed = move.speed;
                     self.direction = move.direction;
+                    self.move();
                 }
             }
         },

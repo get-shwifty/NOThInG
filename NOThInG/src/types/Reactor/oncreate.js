@@ -1,21 +1,19 @@
-MActivable(this,false, 2);
 MMovable(this);
 MContainer(this, 1);
-MEvent(this);
+const transmitter = MTransmitter(this, SIGNAL.ELECTRICITY, 2);
+
+const isTh = obj => obj.MElement.getType().type === EL.Th.type;
 
 this.MEvent.on("elementTaken", (el) => {
-    if (el.MElement.getType().type == EL.Th.type) {
-        this.MActivable.activate();
+    if (isTh(el)) {
+        transmitter.activate();
     }
 });
 
 this.MEvent.on("elementDropped", (el, remainingEls) => {
-    for(let obj of remainingEls) {
-        if (obj.MElement.getType().type == EL.Th.type) {
-            return;
-        }
+    if(!remainingEls.find(isTh)) {
+        transmitter.deactivate();
     }
-   this.MActivable.deactivate();
 });
 
 // setTimeout(() => { 

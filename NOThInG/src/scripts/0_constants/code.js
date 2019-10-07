@@ -31,3 +31,7 @@ const EL = {
         type: "El_Oxygen"
     },
 };
+
+const SIGNAL = {
+    ELECTRICITY: 'ELECTRICITY'
+};
