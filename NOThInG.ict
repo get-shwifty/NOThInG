@@ -2,9 +2,6 @@
   "ctjsVersion": "1.0.2",
   "notes": "/* empty */",
   "libs": {
-    "fittoscreen": {
-      "mode": "scaleFit"
-    },
     "mouse": {},
     "keyboard": {},
     "keyboard.polyfill": {},

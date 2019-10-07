@@ -1,5 +1,5 @@
  const MActivable = (self,active, dist) =>{
-    MObstacle(self);
+    // MObstacle(self, false);
     self.MActivable = {
         deactivate() {
             active = false;
