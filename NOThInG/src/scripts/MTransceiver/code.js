@@ -15,8 +15,12 @@ const MTransceiver = (self, signal, distance, behaviour) => {
 };
 
 const deleteMTransceiver = (self, signal) => {
-    delete self.MReceiver[signal];
-    self.MTransmitter[signal].deactivate();
-    self.MTransmitter[signal].onStep(true);
-    delete self.MTransmitter[signal];
+    if(self.MReceiver && self.MReceiver[signal]) {
+        delete self.MReceiver[signal];
+    }
+    if(self.MTransmitter && self.MTransmitter[signal]) {
+        self.MTransmitter[signal].deactivate();
+        self.MTransmitter[signal].onStep(true);
+        delete self.MTransmitter[signal];
+    }
 };
