@@ -9,7 +9,9 @@
     "akatemplate": {
       "csscss": "body {\n    background: #000;\n}"
     },
-    "fittoscreen": {}
+    "fittoscreen": {
+      "mode": "scaleFit"
+    }
   },
   "skeletons": [],
   "sounds": [
