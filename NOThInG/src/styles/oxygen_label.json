@@ -1,0 +1,19 @@
+{
+  "name": "oxygen_label",
+  "uid": "63cc5a15-5fa8-4302-8083-0c22fadb45df",
+  "origname": "s0c22fadb45df",
+  "font": {
+    "family": "sans-serif",
+    "size": 54,
+    "weight": 400,
+    "italic": false
+  },
+  "stroke": {
+    "color": "#240B0B",
+    "weight": 1
+  },
+  "fill": {
+    "type": "0",
+    "color": "#BC3B3B"
+  }
+}

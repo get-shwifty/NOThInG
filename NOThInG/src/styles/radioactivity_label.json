@@ -1,0 +1,19 @@
+{
+  "name": "radioactivity_label",
+  "uid": "6528690a-4bdd-425f-9422-4ecfaa931666",
+  "origname": "s4ecfaa931666",
+  "font": {
+    "family": "sans-serif",
+    "size": 54,
+    "weight": 400,
+    "italic": false
+  },
+  "stroke": {
+    "color": "#0D170A",
+    "weight": 1
+  },
+  "fill": {
+    "type": "0",
+    "color": "#60A549"
+  }
+}

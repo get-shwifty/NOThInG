@@ -28,5 +28,8 @@ else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
     }
 } 
 
+// *** UI Oxygen & Radioactivity
+this.oxygenLabel.text = 'Oxygen: ' + this.remainingOxygen;
+this.radioactivityLabel.text = 'Radioactivity: ' + this.currentRadioactivity;
 
 this.MContainer.onDraw("Player");
