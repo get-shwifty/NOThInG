@@ -1,8 +1,9 @@
-MMovable(this);
+MMovable(this, true);
 MContainer(this, 4);
 
-this.moving = false;
-setInterval(() => {
-    this.moving = !this.moving;
-}, 3000)
-// this.MContainer.addElementByType('G');
+this.MEvent.on('moveStart', () => {
+    console.log("moveStart");
+});
+this.MEvent.on('moveEnd', () => {
+    console.log("moveEnd");
+});

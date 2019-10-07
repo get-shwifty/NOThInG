@@ -15,7 +15,7 @@ const MEvent = (self) => {
         },
         on(event, cb) {
             if (typeof cb !== 'function') {
-                throw new Error('Listener must be a function');
+                throw new Error('Listener must be a function', typeof cb);
             }
             
             (events[event] = events[event] || []).push(cb);
