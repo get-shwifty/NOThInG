@@ -1,2 +1,2 @@
 MMovable(this);
-MElement(this, EL.Th);
+MElement(this, EL.O);

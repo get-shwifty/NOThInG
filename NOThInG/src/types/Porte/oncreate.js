@@ -1,6 +1,7 @@
 const receiver = MReceiver(this, SIGNAL.ELECTRICITY, 'some');
+MObstacle(this, true);
 
-const onChange = opened => {
+this.MEvent.on('change', opened => {
     // change behaviour
     if (opened) {
         delete this.MObstacle;
@@ -9,13 +10,12 @@ const onChange = opened => {
     }
     
     // Change display
-    if (opened){
-        this.tex = 'Porte_Ouverture';
-        this.play();
+    if (opened) {
+        playAnimation(this, 'Porte_Ouverture', 0.15)
+        this.loop = false;
     } else {
-        this.tex = 'Porte_Fermee';
+        playAnimation(this, 'Porte_Fermeture', 0.15)
+        this.loop = false;
     }
-};
+});
 
-this.MEvent.on('change', onChange);
-onChange(receiver.isActive());

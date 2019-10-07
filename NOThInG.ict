@@ -2,19 +2,63 @@
   "ctjsVersion": "1.0.2",
   "notes": "/* empty */",
   "libs": {
-    "fittoscreen": {
-      "mode": "scaleFit"
-    },
     "mouse": {},
     "keyboard": {},
     "keyboard.polyfill": {},
     "sound.howler": {},
     "akatemplate": {
       "csscss": "body {\n    background: #000;\n}"
+    },
+    "fittoscreen": {
+      "mode": "scaleFit"
     }
   },
   "skeletons": [],
-  "sounds": [],
+  "sounds": [
+    {
+      "name": "music",
+      "uid": "6f927400-1060-44de-9df9-8be26aefb231",
+      "isMusic": true,
+      "origname": "s6f927400-1060-44de-9df9-8be26aefb231.ogg",
+      "lastmod": 1570452099359
+    },
+    {
+      "name": "door",
+      "uid": "03a24d5d-3f57-44fd-bfee-91d835d4d69c",
+      "origname": "s03a24d5d-3f57-44fd-bfee-91d835d4d69c.ogg",
+      "lastmod": 1570452156215
+    },
+    {
+      "name": "crate",
+      "uid": "2b29ef41-1ced-4b8d-b367-3cf10dcd1a5c",
+      "origname": "s2b29ef41-1ced-4b8d-b367-3cf10dcd1a5c.ogg",
+      "lastmod": 1570452173667
+    },
+    {
+      "name": "impact",
+      "uid": "7e7a9e67-580f-4714-84b8-9f0f83002b87",
+      "origname": "s7e7a9e67-580f-4714-84b8-9f0f83002b87.ogg",
+      "lastmod": 1570452188809
+    },
+    {
+      "name": "water_splash",
+      "uid": "74159d00-0a5d-4d62-be26-1f07a9e97b02",
+      "origname": "s74159d00-0a5d-4d62-be26-1f07a9e97b02.ogg",
+      "lastmod": 1570452201204
+    },
+    {
+      "name": "pickup",
+      "uid": "7193c755-d246-4325-b009-d4fc36fdcf79",
+      "origname": "s7193c755-d246-4325-b009-d4fc36fdcf79.wav",
+      "lastmod": 1570452212096
+    },
+    {
+      "name": "generator",
+      "uid": "6320908d-b1cc-4f44-9f6b-10e3fa29186e",
+      "origname": "s6320908d-b1cc-4f44-9f6b-10e3fa29186e.ogg",
+      "lastmod": 1570452221572
+    }
+  ],
   "starting": 0,
   "settings": {
     "minifyhtmlcss": false,
@@ -40,5 +84,5 @@
     "pixelatedrender": false
   },
   "fonts": [],
-  "startroom": "70d941bf-6f8e-497a-b273-4a39f6ab0720"
+  "startroom": "97e034c3-3517-4bd1-a85a-f9e08010f566"
 }

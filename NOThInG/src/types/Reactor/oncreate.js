@@ -19,6 +19,6 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 // setTimeout(() => { 
 //     console.log(utils.getUnderDistance(this,3,'MOpenable'));
 // }, 0);
-this.background = this.addChild(new PIXI.Sprite(ct.res.getTexture('Reactor_Background', 0)));
-this.core = this.addChild(new PIXI.Sprite(ct.res.getTexture('Reactor_Core_Off', 0)));
-// console.log("wowow", this.core)
+this.body.tex = -1;
+this.body.background = this.body.addChild(new PIXI.Sprite(ct.res.getTexture('Reactor_Background', 0)));
+this.body.core = this.body.addChild(new ct.types.Copy());
