@@ -1,0 +1,8 @@
+{
+  "name": "Escape",
+  "methods": [
+    {
+      "code": "keyboard.Escape"
+    }
+  ]
+}
