@@ -5,6 +5,11 @@ const MContainer =  (self, maxSlots) => {
     self.MContainer = {
         addElement(other) {
             if(other && objectsTypes.length < maxSlots) {
+                if (self.MEvent) {
+                    self.MEvent.emit("elementTaken", other);
+                } else {
+                    console.log("No MEvent Mixins, can't emit message 'elementTaken'");
+                }
                 objectsTypes.push(other);
                 other.kill = true;
                 self.MContainer.updateView();
@@ -14,16 +19,18 @@ const MContainer =  (self, maxSlots) => {
         },
         addElementByCst(cst) {
             if(objectsTypes.length < maxSlots) {
-                objectsTypes.push(ct.types.make(cst.type));
-                objectsTypes[objectsTypes.length - 1].kill = true;
-                self.MContainer.updateView();
-                return true;
+                this.addElement(ct.types.make(cst.type));
             }
             return false;
         },
         popElement() {
             if (objectsTypes.length > 0) {
                 let obj = objectsTypes.pop();
+                if (self.MEvent) {
+                    self.MEvent.emit("elementDropped", obj, objectsTypes);
+                } else {
+                    console.log("No MEvent Mixins, can't emit message 'elementTaken'");
+                }
                 self.MContainer.updateView();
                 return obj;
             }
