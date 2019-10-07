@@ -2,6 +2,8 @@ const receiver = MReceiver(this, SIGNAL.ELECTRICITY, 'some');
 MObstacle(this, true);
 
 this.MEvent.on('change', opened => {
+    ct.sound.spawn('door')
+    
     // change behaviour
     if (opened) {
         delete this.MObstacle;

@@ -15,6 +15,7 @@ this.oxygenLabel.y = 80;
 this.oxygenLabel.visible = true;
 
 this.MEvent.on("elementTaken", (el) => {
+    ct.sound.spawn("pickup")
     if (el.MElement.getType().type == EL.O.type) {
         this.breathing = true;
         this.oxygenLabel.visible = false;
@@ -23,6 +24,7 @@ this.MEvent.on("elementTaken", (el) => {
 });
 
 this.MEvent.on("elementDropped", (el, remainingEls) => {
+    ct.sound.spawn("pickup")
     for(let obj of remainingEls) {
         if (obj.MElement.getType().type == EL.O.type) {
             return;
