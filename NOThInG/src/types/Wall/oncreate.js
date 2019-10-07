@@ -1,1 +1,1 @@
-MObstacle(this);
+MObstacle(this, true);

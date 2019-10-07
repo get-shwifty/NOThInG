@@ -1,5 +1,5 @@
 {
-  "name": "Wall_End",
+  "name": "Reactor_Core_On",
   "untill": 0,
   "grid": [
     1,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\wall_end.png",
+  "origname": "i16e4ec54-6aff-40d5-bd05-50e85bbc8b63.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\reactor_core_on.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "4ed48eb1-0cae-4d8c-bce7-88d1aefc2a94"
+  "uid": "16e4ec54-6aff-40d5-bd05-50e85bbc8b63"
 }

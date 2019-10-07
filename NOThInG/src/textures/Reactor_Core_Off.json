@@ -1,5 +1,5 @@
 {
-  "name": "Player_Back",
+  "name": "Reactor_Core_Off",
   "untill": 0,
   "grid": [
     1,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i3e9f44de-c324-4025-be3b-9ce7ccd2194f",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_back.png",
+  "origname": "i706716ed-968c-48e4-a200-3fe6b5b6d4a3.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\reactor_core_off.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "3e9f44de-c324-4025-be3b-9ce7ccd2194f"
+  "uid": "706716ed-968c-48e4-a200-3fe6b5b6d4a3"
 }
