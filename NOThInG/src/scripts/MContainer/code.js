@@ -7,6 +7,7 @@ const MContainer =  (self, maxSlots, shadowScale=1) => {
     self.body.tex = self.tex
     self.tex = -1
     self.shadow.tex = 'Shadow';
+    self.shadow.visible = false;
     let frameCount = 0;
     
     self.MContainer = {
