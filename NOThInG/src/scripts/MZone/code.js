@@ -3,7 +3,7 @@ const MZone = (self, types, callback) => {
 
     self.MZone = {
         canDrop(el) {
-            return types.indexOf(el.MElement.getType()) >= 0;
+            return types === 'all' || types.indexOf(el.MElement.getType()) >= 0;
         },
         drop(el) {
             if(this.canDrop(el)) {
@@ -11,7 +11,7 @@ const MZone = (self, types, callback) => {
             }
         },
         onStep() {
-            for(const el of utils.getUnderDistance(self, 0, 'MElement')) {
+            for(const el of utils.getUnderDistance(self, 0)) {
                 this.drop(el);
             }
         }

@@ -1,5 +1,5 @@
 {
-  "name": "Water",
+  "name": "Wave1",
   "untill": 0,
   "grid": [
     1,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i848a129f-5674-469d-8657-15cb73d6fb0d.png",
-  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\water.png",
+  "origname": "ib72372ad-cf8d-40ab-8527-6b91961a5c81.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\wave_1.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "848a129f-5674-469d-8657-15cb73d6fb0d"
+  "uid": "b72372ad-cf8d-40ab-8527-6b91961a5c81"
 }

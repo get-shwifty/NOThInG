@@ -1,5 +1,5 @@
 {
-  "name": "Water_Middle",
+  "name": "Wave2",
   "untill": 0,
   "grid": [
     1,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "icf601109-377d-49cd-8e0f-cf3ea6fc93d1.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\water_middle.png",
+  "origname": "ic1ccea26-8344-4f9b-89c9-6ba0da10170c.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\wave_2.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "cf601109-377d-49cd-8e0f-cf3ea6fc93d1"
+  "uid": "c1ccea26-8344-4f9b-89c9-6ba0da10170c"
 }

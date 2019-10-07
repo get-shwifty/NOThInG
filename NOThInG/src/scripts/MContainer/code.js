@@ -73,7 +73,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
                     zoneInFront.MZone.drop(this.popElement());
                 }
             } else if(!anyInFront) {
-                utils.spawn(this.popElement().MElement.getType(), self, dir);
+                utils.spawn(this.popElement().MElement.getType().type, self, dir);
             }
         },
         hasFreeSlot() {

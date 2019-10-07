@@ -1,6 +1,6 @@
 MZone(this, [EL.G], (el) => {
     console.log("trigger", this, el);
-    utils.spawn(EL.Th, this);
+    utils.spawn(EL.Th.type, this);
     this.kill = true;
     el.kill = true;
 });
@@ -8,8 +8,7 @@ MZone(this, [EL.G], (el) => {
 setTimeout(() => {
     getPlayer().MEvent.on('step', () => {
         if(utils.distance(this, getPlayer()) === 0) {
-            // kill human
-            console.log('kill');
+            getPlayer().dyingMenu();
         }
     });
 })
