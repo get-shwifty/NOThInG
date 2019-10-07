@@ -1,4 +1,4 @@
-const MMovable = (self, gravity) => {
+const MMovable = (self) => {
     MEvent(self);
     
     const moves = [];
@@ -47,9 +47,9 @@ const MMovable = (self, gravity) => {
                 }
             }
         },
-        go(dir) {
+        go(dir, propagation=false) {
             if(self.MMovable.isAntiGravity()) {
-                return self.MMovable.goAntiGravity(dir);
+                return self.MMovable.goAntiGravity(dir, propagation);
             }
             
             if(self.MMovable.moving) {
@@ -60,7 +60,7 @@ const MMovable = (self, gravity) => {
             const other = self.MMovable.canGoDir(dir);
             if(other) {
                 if(other !== true) {
-                    if(other.MMovable.go(dir)) {
+                    if(other.MMovable.go(dir, true)) {
                         move(dir);
                     }
                 } else {
@@ -73,14 +73,18 @@ const MMovable = (self, gravity) => {
             }
         },
         isAntiGravity() {
-            return gravity;
+            return self.MContainer && self.MContainer.has(EL.G);
         },
         goAntiGravity(dir, propagation=false) {
             if(!propagation && self.MMovable.moving) {
                 return false;
             }
-            
-            self.MMovable.dir = dir;
+            if(self.MMovable.dir !== dir) {
+                self.MMovable.dir = dir;
+                if(!propagation) {
+                    return false;
+                }
+            }
             
             // let hasSupport = false;
             // const movableAntiGravityObjects = []

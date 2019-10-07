@@ -3,6 +3,14 @@ const MContainer =  (self, maxSlots) => {
     const pixiObjects = [];
     
     self.MContainer = {
+        has(cst) {
+            for(const el of objectsTypes) {
+                if(el.MElement.getType() === cst) {
+                    return true;
+                }
+            }
+            return false;
+        },
         addElement(other) {
             if(other && objectsTypes.length < maxSlots) {
                 if (self.MEvent) {
