@@ -8,14 +8,18 @@ const MContainer =  (self, maxSlots) => {
                 objectsTypes.push(other);
                 other.kill = true;
                 self.MContainer.updateView();
+                return true;
             }
+            return false;
         },
         addElementByCst(cst) {
             if(objectsTypes.length < maxSlots) {
                 objectsTypes.push(ct.types.make(cst.type));
                 objectsTypes[objectsTypes.length - 1].kill = true;
                 self.MContainer.updateView();
+                return true;
             }
+            return false;
         },
         popElement() {
             if (objectsTypes.length > 0) {
@@ -38,11 +42,6 @@ const MContainer =  (self, maxSlots) => {
                     let newEl = ct.types.make(elDrop.MElement.getType().type, self.x, self.y);
                     utils.move(newEl, dir);
                 }
-                // if (this.MMovable.dir == DIR.UP) {
-                //     newEl.MMovable.goUp();
-                // } else if (this.MMovable.dir == DIR.DOWN) {
-                //     newEl.MMovable.goDown();
-                // }
             }
         },
         hasFreeSlot() {

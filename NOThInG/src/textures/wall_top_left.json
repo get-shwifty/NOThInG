@@ -1,0 +1,28 @@
+{
+  "name": "wall_top_left",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 120,
+  "imgHeight": 119,
+  "width": 120,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "id73cd5cc-9d7f-4f82-a483-9d7ff3ab640c.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\wall_top_left.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 120,
+  "top": 0,
+  "bottom": 119,
+  "uid": "d73cd5cc-9d7f-4f82-a483-9d7ff3ab640c"
+}

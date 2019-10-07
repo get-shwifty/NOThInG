@@ -1,5 +1,5 @@
 {
-  "name": "Player_Side",
+  "name": "Reactor_Background",
   "untill": 0,
   "grid": [
     1,
@@ -17,12 +17,12 @@
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i0cf60e4c-c3a6-4ea3-a4da-fc52b8a89ccd.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_side.png",
+  "origname": "i90749f73-b3de-4aaa-b212-b0607d5b0f23.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\reactor_background.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "0cf60e4c-c3a6-4ea3-a4da-fc52b8a89ccd"
+  "uid": "90749f73-b3de-4aaa-b212-b0607d5b0f23"
 }

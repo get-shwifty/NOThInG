@@ -1,8 +1,8 @@
 {
-  "name": "Wall",
+  "name": "Porte_Fermeture",
   "untill": 0,
   "grid": [
-    1,
+    5,
     1
   ],
   "axis": [
@@ -11,19 +11,18 @@
   ],
   "marginx": 0,
   "marginy": 0,
-  "imgWidth": 119,
+  "imgWidth": 595,
   "imgHeight": 119,
   "width": 119,
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i24f60f00-80e3-4121-bdf1-075589fea0b1.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\wall.png",
+  "origname": "i1572ec4d-e1ab-4f28-974d-6048ef2fd14f.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\porte_fermeture.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "24f60f00-80e3-4121-bdf1-075589fea0b1",
-  "tiled": false
+  "uid": "1572ec4d-e1ab-4f28-974d-6048ef2fd14f"
 }

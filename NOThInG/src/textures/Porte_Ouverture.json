@@ -1,8 +1,8 @@
 {
-  "name": "Reactor_Off",
+  "name": "Porte_Ouverture",
   "untill": 0,
   "grid": [
-    1,
+    5,
     1
   ],
   "axis": [
@@ -11,18 +11,18 @@
   ],
   "marginx": 0,
   "marginy": 0,
-  "imgWidth": 119,
+  "imgWidth": 595,
   "imgHeight": 119,
   "width": 119,
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "i9744b90a-334e-4a42-82ae-a1621ab09aca.png",
-  "source": "/home/alexis/git/NOThInG/Img/reactor_off.png",
+  "origname": "i9e4498cf-676f-426e-b28f-ec6fad868f01.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\porte_ouverture.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "9744b90a-334e-4a42-82ae-a1621ab09aca"
+  "uid": "9e4498cf-676f-426e-b28f-ec6fad868f01"
 }
