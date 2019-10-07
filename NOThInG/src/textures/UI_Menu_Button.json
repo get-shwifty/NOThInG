@@ -6,23 +6,23 @@
     1
   ],
   "axis": [
-    100,
-    21
+    145,
+    30
   ],
   "marginx": 0,
   "marginy": 0,
-  "imgWidth": 200,
-  "imgHeight": 42,
-  "width": 200,
-  "height": 42,
+  "imgWidth": 290,
+  "imgHeight": 60,
+  "width": 290,
+  "height": 60,
   "offx": 0,
   "offy": 0,
   "origname": "i6146ff5e-5c7e-4b69-b36c-1c0cfa4fca4d.png",
-  "source": "D:\\GitHub\\NOThInG\\Img\\72264120_401672180744050_3246848924765388800_n.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\72696891_2759249207438627_1957009132686934016_n.png",
   "shape": "rect",
-  "left": 100,
-  "right": 100,
-  "top": 21,
-  "bottom": 21,
+  "left": 145,
+  "right": 145,
+  "top": 30,
+  "bottom": 30,
   "uid": "6146ff5e-5c7e-4b69-b36c-1c0cfa4fca4d"
 }

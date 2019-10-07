@@ -1,0 +1,8 @@
+{
+  "name": "Restart",
+  "methods": [
+    {
+      "code": "keyboard.KeyR"
+    }
+  ]
+}

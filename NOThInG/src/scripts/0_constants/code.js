@@ -40,7 +40,7 @@ const NON_LEVEL_ROOMS = ["Menu", "Menu_Level_Select", "Final_Screen"];
 
 const SPLASH_POS = {
     "UI_Menu": { x : 0, y : 300},
-    "First_Box": { x : 0, y : 400},
-    "Second_Box": { x : 0, y : 480},
-    "Third_Box": { x : 0, y : 560},
+    "First_Box": { x : 0, y : 450},
+    "Second_Box": { x : 0, y : 540},
+    "Third_Box": { x : 0, y : 630},
 };

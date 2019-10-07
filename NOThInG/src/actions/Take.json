@@ -3,6 +3,9 @@
   "methods": [
     {
       "code": "keyboard.KeyK"
+    },
+    {
+      "code": "keyboard.KeyS"
     }
   ]
 }
