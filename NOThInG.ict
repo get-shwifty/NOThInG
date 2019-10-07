@@ -58,6 +58,24 @@
       "uid": "6320908d-b1cc-4f44-9f6b-10e3fa29186e",
       "origname": "s6320908d-b1cc-4f44-9f6b-10e3fa29186e.ogg",
       "lastmod": 1570452221572
+    },
+    {
+      "name": "footstep_1",
+      "uid": "6a54c1a7-f232-4535-b139-0a57676ef501",
+      "origname": "s6a54c1a7-f232-4535-b139-0a57676ef501.ogg",
+      "lastmod": 1570475916590
+    },
+    {
+      "name": "footstep_2",
+      "uid": "24f444f2-164c-43f7-ba83-9fbe4560f76c",
+      "origname": "s24f444f2-164c-43f7-ba83-9fbe4560f76c.ogg",
+      "lastmod": 1570475925059
+    },
+    {
+      "name": "footstep_3",
+      "uid": "9f48db9f-5682-4c37-8c4e-0ae20882e2c6",
+      "origname": "s9f48db9f-5682-4c37-8c4e-0ae20882e2c6.ogg",
+      "lastmod": 1570475931964
     }
   ],
   "starting": 0,
