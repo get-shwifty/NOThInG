@@ -35,3 +35,5 @@ const EL = {
 const SIGNAL = {
     ELECTRICITY: 'ELECTRICITY'
 };
+
+const NON_LEVEL_ROOMS = ["Menu", "Menu_Level_Select", "Final_Screen"];

@@ -2,8 +2,30 @@
   "name": "1_1_HelloWorld",
   "width": 800,
   "height": 600,
-  "backgrounds": [],
-  "copies": [],
+  "backgrounds": [
+    {
+      "depth": -1,
+      "texture": "ba7943c6-49aa-446f-a25c-b284078dfc41",
+      "extends": {}
+    }
+  ],
+  "copies": [
+    {
+      "x": 640,
+      "y": 256,
+      "uid": "47823805-a91e-454b-80b5-95d1b032f885"
+    },
+    {
+      "x": 640,
+      "y": 256,
+      "uid": "47823805-a91e-454b-80b5-95d1b032f885"
+    },
+    {
+      "x": 128,
+      "y": 256,
+      "uid": "39aecb37-9206-412a-8fb3-0616a135ba89"
+    }
+  ],
   "tiles": [
     {
       "depth": -10,

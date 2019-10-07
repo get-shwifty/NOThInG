@@ -4,9 +4,9 @@ let max_x =  5;
 let initial_x = 200;
 let initial_y = 400;
 
-let forbidden_rooms = ["Menu", "Menu_Level_Select"]
 
-const rooms = Object.keys(ct.rooms.templates).sort().filter(e => forbidden_rooms.indexOf(e) === -1)
+
+const rooms = Object.keys(ct.rooms.templates).sort().filter(e => NON_LEVEL_ROOMS.indexOf(e) === -1)
 rooms.forEach(room => {
     let coord_x = x % max_x;
     let coord_y = Math.floor(x / max_x);

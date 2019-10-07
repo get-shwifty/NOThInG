@@ -110,7 +110,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
             
             self.shadow.visible = false
             self.body.y = 0;
-            if (self.MMovable.isAntiGravity()) {
+            if (self.MContainer && self.MContainer.has(EL.G)) {
                 self.body.y = -15*shadowScale + Math.sin(frameCount / (4*shadowScale)) * 2.5;
                 self.shadow.visible = true;
                 self.shadow.scale.x += Math.sin(frameCount / (4*shadowScale)) * 0.01;
