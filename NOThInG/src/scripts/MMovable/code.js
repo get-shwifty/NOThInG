@@ -60,7 +60,9 @@ const MMovable = (self, gravity) => {
             const other = self.MMovable.canGoDir(dir);
             if(other) {
                 if(other !== true) {
-                    other.MMovable.go(dir);
+                    if(other.MMovable.go(dir)) {
+                        move(dir);
+                    }
                 } else {
                     move(dir);
                 }
