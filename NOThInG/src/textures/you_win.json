@@ -1,0 +1,28 @@
+{
+  "name": "you_win",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    277,
+    135
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 554,
+  "imgHeight": 270,
+  "width": 554,
+  "height": 270,
+  "offx": 0,
+  "offy": 0,
+  "origname": "iab51ccfc-4804-4712-9755-83667247d816.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\you_win.png",
+  "shape": "rect",
+  "left": 277,
+  "right": 277,
+  "top": 135,
+  "bottom": 135,
+  "uid": "ab51ccfc-4804-4712-9755-83667247d816"
+}

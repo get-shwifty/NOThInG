@@ -1,0 +1,28 @@
+{
+  "name": "you_lose",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    281,
+    136
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 563,
+  "imgHeight": 273,
+  "width": 563,
+  "height": 273,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ia34932ef-5974-4fb6-a5bf-aefdf7c25206.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\you_lose.png",
+  "shape": "rect",
+  "left": 281,
+  "right": 282,
+  "top": 136,
+  "bottom": 137,
+  "uid": "a34932ef-5974-4fb6-a5bf-aefdf7c25206"
+}

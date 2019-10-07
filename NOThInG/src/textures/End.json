@@ -1,0 +1,28 @@
+{
+  "name": "End",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    482,
+    295
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 965,
+  "imgHeight": 591,
+  "width": 965,
+  "height": 591,
+  "offx": 0,
+  "offy": 0,
+  "origname": "icee7e3f1-151b-4147-8110-caa9dbc511ea.png",
+  "source": "D:\\GitHub\\NOThInG\\Img\\71816639_1655721164558018_7220501449539584_n.png",
+  "shape": "rect",
+  "left": 482,
+  "right": 483,
+  "top": 295,
+  "bottom": 296,
+  "uid": "cee7e3f1-151b-4147-8110-caa9dbc511ea"
+}
