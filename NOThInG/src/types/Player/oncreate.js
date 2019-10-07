@@ -4,8 +4,11 @@ MContainer(this, 4);
 this.body.tex = -1;
 
 this.MEvent.on('moveStart', () => {
-    console.log("moveStart");
 });
 this.MEvent.on('moveEnd', () => {
-    console.log("moveEnd");
+    if(this.MMovable.isAntiGravity()){
+        if(utils.getNextDir(this, this.MMovable.dir, 'MObstacle')) {
+            ct.sound.spawn("impact") ;
+        }
+    }
 });
