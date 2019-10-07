@@ -32,7 +32,8 @@
       "name": "crate",
       "uid": "2b29ef41-1ced-4b8d-b367-3cf10dcd1a5c",
       "origname": "s2b29ef41-1ced-4b8d-b367-3cf10dcd1a5c.ogg",
-      "lastmod": 1570452173667
+      "lastmod": 1570452173667,
+      "poolSize": 1
     },
     {
       "name": "impact",
