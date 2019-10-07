@@ -28,7 +28,7 @@ const MReceiver = (self, signal, behaviour='some') => {
                 
                 if(active !== newActive) {
                     active = newActive;
-                    self.MEvent.emit('change', active);
+                    self.MEvent.emit('signal', signal, active);
                 }
             }
         },
