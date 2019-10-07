@@ -3,7 +3,7 @@ const MZone = (self, types, callback) => {
 
     self.MZone = {
         canDrop(el) {
-            return types.indexOf(el.MElement.getType()) >= 0;
+            return types === 'all' || types.indexOf(el.MElement.getType()) >= 0;
         },
         drop(el) {
             if(this.canDrop(el)) {
