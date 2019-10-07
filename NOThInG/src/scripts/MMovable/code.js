@@ -1,4 +1,3 @@
-
 const MMovable = (self, gravity) => {
     MEvent(self);
     
@@ -23,6 +22,7 @@ const MMovable = (self, gravity) => {
     };
 
     self.MMovable = {
+        dir: DIR.DOWN,
         moving: false,
         onStep() {
             if(self.MMovable.moving) {

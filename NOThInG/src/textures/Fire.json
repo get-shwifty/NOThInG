@@ -2,27 +2,28 @@
   "name": "Fire",
   "untill": 0,
   "grid": [
-    1,
+    6,
     1
   ],
   "axis": [
-    0,
-    0
+    59,
+    61
   ],
   "marginx": 0,
   "marginy": 0,
-  "imgWidth": 119,
-  "imgHeight": 119,
+  "imgWidth": 714,
+  "imgHeight": 122,
   "width": 119,
-  "height": 119,
+  "height": 123,
   "offx": 0,
   "offy": 0,
   "origname": "i39fa0667-1a7c-4c90-b966-9d8c121eff8a.png",
-  "source": "/home/alexis/git/NOThInG/Img/fire.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\fire.png",
   "shape": "rect",
-  "left": 0,
-  "right": 119,
-  "top": 0,
-  "bottom": 119,
-  "uid": "39fa0667-1a7c-4c90-b966-9d8c121eff8a"
+  "left": 59,
+  "right": 60,
+  "top": 61,
+  "bottom": 62,
+  "uid": "39fa0667-1a7c-4c90-b966-9d8c121eff8a",
+  "r": 59
 }
