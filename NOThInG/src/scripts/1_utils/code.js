@@ -1,5 +1,16 @@
 
+const getPlayer = () => {
+    return ct.types.list.Player[0];
+};
+
 const utils = {
+    spawn(cst, pos, dir) {
+        const newEl = ct.types.make(cst.type, pos.x, pos.y);
+        if(dir) {
+            this.move(newEl, dir);
+        }
+        return newEl;
+    },
     move: (el, dir) => {
         if(dir === DIR.UP) {
             el.y -= TILE_SIZE;

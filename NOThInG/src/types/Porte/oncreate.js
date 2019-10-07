@@ -1,7 +1,7 @@
 const receiver = MReceiver(this, SIGNAL.ELECTRICITY, 'some');
 MObstacle(this, true);
 
-this.MEvent.on('change', opened => {
+this.MEvent.on('signal', (signal, opened) => {
     ct.sound.spawn('door')
     
     // change behaviour
