@@ -4,8 +4,8 @@ const getPlayer = () => {
 };
 
 const utils = {
-    spawn(cst, pos, dir) {
-        const newEl = ct.types.make(cst.type, pos.x, pos.y);
+    spawn(el, pos, dir) {
+        const newEl = ct.types.make(el, pos.x, pos.y);
         if(dir) {
             this.move(newEl, dir);
         }

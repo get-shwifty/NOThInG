@@ -1,6 +1,6 @@
 {
   "name": "Water",
-  "depth": 0,
+  "depth": -1,
   "uid": "bd74a358-7824-4a20-bd32-959bdddde8a5",
   "texture": "cf601109-377d-49cd-8e0f-cf3ea6fc93d1",
   "extends": {}

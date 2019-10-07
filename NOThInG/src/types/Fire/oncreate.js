@@ -1,6 +1,6 @@
 MZone(this, [EL.G], (el) => {
     console.log("trigger", this, el);
-    utils.spawn(EL.Th, this);
+    utils.spawn(EL.Th.type, this);
     this.kill = true;
     el.kill = true;
 });
