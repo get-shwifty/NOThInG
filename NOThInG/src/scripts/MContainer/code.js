@@ -1,4 +1,4 @@
-const MContainer =  (self, maxSlots) => {
+const MContainer =  (self, maxSlots, shadowScale=1) => {
     const objectsTypes = [];
     const pixiObjects = [];
     
@@ -106,9 +106,9 @@ const MContainer =  (self, maxSlots) => {
             self.shadow.visible = false
             self.body.y = 0;
             if (self.MMovable.isAntiGravity()) {
-                self.body.y = -15 + Math.sin(frameCount / 4) * 2.5;
+                self.body.y = -15*shadowScale + Math.sin(frameCount / (4*shadowScale)) * 2.5;
                 self.shadow.visible = true;
-                self.shadow.scale.x += Math.sin(frameCount /4) * 0.01;
+                self.shadow.scale.x += Math.sin(frameCount / (4*shadowScale)) * 0.01;
                 frameCount++;
             }
         }

@@ -1,5 +1,6 @@
 MMovable(this);
-MContainer(this, 3);
+
+MContainer(this, 3, 2);
 
 this.MEvent.on('moveStart', () => {
     console.log("moveStart");
