@@ -35,4 +35,4 @@ else if(this.MMovable.dir === DIR.LEFT || this.MMovable.dir === DIR.RIGHT) {
 } 
 
 
-this.MContainer.onDraw();
+this.MContainer.onDraw("Player");

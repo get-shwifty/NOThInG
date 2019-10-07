@@ -8,3 +8,5 @@ if (this.MActivable.isActive()){
     this.core.texture = ct.res.getTexture('Reactor_Core_Off', 0)
     this.MActivable.deactivate(2);
 }
+
+this.MContainer.onDraw("Reactor");
