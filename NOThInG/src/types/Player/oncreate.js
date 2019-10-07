@@ -61,7 +61,7 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 this.MEvent.on('moveStart', () => {
     if(!this.MMovable.isAntiGravity()){
         let footstep_sounds = ["footstep_1", "footstep_2", "footstep_3"]
-        ct.sounds.spawn(footstep_sounds[Math.floor(Math.random() * Math.floor(max))])
+        ct.sound.spawn(footstep_sounds[Math.floor(Math.random() * Math.floor(3))])
     }
 });
 this.MEvent.on('moveEnd', () => {
