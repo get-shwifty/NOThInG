@@ -1,6 +1,6 @@
 const player = getPlayer();
 
-for(const el of utils.getUnderDistance(self, 0)) {
+for(const el of utils.getUnderDistance(this, 0)) {
     if(el.MElement && el.MElement.getType() === EL.N) {
         this.kill = true;
         el.kill = true;
