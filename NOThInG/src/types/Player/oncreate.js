@@ -1,8 +1,7 @@
 MMovable(this);
 MContainer(this, 4);
-
-this.moving = false;
-setInterval(() => {
-    this.moving = !this.moving;
-}, 3000)
+this.body = this.addChild(new ct.types.Copy())
+this.shadow = this.addChild(new ct.types.Copy())
+this.shadow.tex = 'Shadow'
+this.count = 0
 // this.MContainer.addElementByType('G');
