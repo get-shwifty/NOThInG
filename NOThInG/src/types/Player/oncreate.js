@@ -1,4 +1,4 @@
-MMovable(this, false);
+MMovable(this);
 MContainer(this, 4);
 
 this.moving = false;
