@@ -8,6 +8,7 @@ const playAnimation = function(obj, animName, animSpeed){
 const IDDLE_SPEED = 0.3
 this.shadow.visible = false
 this.scale.x = this.MMovable.dir === DIR.LEFT ? -1: 1;
+this.body.y = 0;
 
 if (this.MMovable.isAntiGravity()) {
     this.body.y = -15 + Math.sin(this.count / 4) * 2.5;

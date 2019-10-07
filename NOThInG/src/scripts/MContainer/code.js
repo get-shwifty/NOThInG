@@ -73,7 +73,12 @@ const MContainer =  (self, maxSlots) => {
                 const child = new PIXI.Sprite(ct.res.getTexture((obj.MElement.getType()).tex, 0));
                 child.scale.x = 0.4;
                 child.scale.y = 0.4;
-                self.addChild(child);
+                if(self.body !== undefined){
+                    self.body.addChild(child);
+                }
+                else{
+                    self.addChild(child)
+                }
                 pixiObjects.push(child);
                 // TODO positions
             }
