@@ -33,7 +33,7 @@ if (ct.actions.Restart.pressed) {
 if (ct.actions.Escape.pressed) {
     if (!this.pause) {
         this.pause = true;
-        console.log(ct.viewHeight / 900);
+        // console.log(ct.viewHeight / 900);
         PIXI.ticker.shared.speed = 0;
         ct.pixiApp.ticker.speed = 0;
         this.arrMenu.push(ct.types.make("UI_Menu", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2)));
