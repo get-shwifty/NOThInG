@@ -1,0 +1,1 @@
+MObstacle(this, true);
