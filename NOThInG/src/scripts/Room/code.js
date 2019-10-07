@@ -4,9 +4,6 @@ const roomOnStep = () => {
         if(el.MMovable) {
             el.MMovable.onStep();
         }
-        if(el.MZone) {
-            el.MZone.onStep();
-        }
         if(el.MTransmitter) {
             for(const sub of Object.values(el.MTransmitter)) {
                 sub.onStep();
