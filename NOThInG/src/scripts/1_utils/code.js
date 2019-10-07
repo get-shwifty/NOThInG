@@ -1,4 +1,8 @@
 
+const getPlayer = () => {
+    return ct.types.list.Player[0];
+};
+
 const utils = {
     spawn(cst, pos, dir) {
         const newEl = ct.types.make(cst.type, pos.x, pos.y);

@@ -61,6 +61,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
             
             const contInFront = utils.getNextDir(self, dir, "MContainer");
             const zoneInFront = utils.getNextDir(self, dir, "MZone");
+            const anyInFront = utils.getNextDir(self, dir);
             
             if (contInFront) {
                 if(contInFront.MContainer.hasFreeSlot()) {
@@ -71,7 +72,7 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
                 if(zoneInFront.MZone.canDrop(lastObject)) {
                     zoneInFront.MZone.drop(this.popElement());
                 }
-            } else {
+            } else if(!anyInFront) {
                 utils.spawn(this.popElement().MElement.getType(), self, dir);
             }
         },

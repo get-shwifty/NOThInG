@@ -5,5 +5,15 @@ MZone(this, [EL.G], (el) => {
     el.kill = true;
 });
 
+setTimeout(() => {
+    getPlayer().MEvent.on('step', () => {
+        if(utils.distance(this, getPlayer()) === 0) {
+            // kill human
+            console.log('kill');
+        }
+    });
+})
+
+
 this.animationSpeed = 0.12;
 this.play();
