@@ -60,16 +60,22 @@
       "lastmod": 1570452221572
     },
     {
-      "name": "victory",
-      "uid": "27deada2-a5c7-432b-a2a0-bd793b002c44",
-      "origname": "s27deada2-a5c7-432b-a2a0-bd793b002c44.ogg",
-      "lastmod": 1570469729104
+      "name": "footstep_1",
+      "uid": "6a54c1a7-f232-4535-b139-0a57676ef501",
+      "origname": "s6a54c1a7-f232-4535-b139-0a57676ef501.ogg",
+      "lastmod": 1570475916590
     },
     {
-      "name": "defeat",
-      "uid": "32d4d54d-4ada-4412-af3a-efc7f9a61aed",
-      "origname": "s32d4d54d-4ada-4412-af3a-efc7f9a61aed.ogg",
-      "lastmod": 1570469746479
+      "name": "footstep_2",
+      "uid": "24f444f2-164c-43f7-ba83-9fbe4560f76c",
+      "origname": "s24f444f2-164c-43f7-ba83-9fbe4560f76c.ogg",
+      "lastmod": 1570475925059
+    },
+    {
+      "name": "footstep_3",
+      "uid": "9f48db9f-5682-4c37-8c4e-0ae20882e2c6",
+      "origname": "s9f48db9f-5682-4c37-8c4e-0ae20882e2c6.ogg",
+      "lastmod": 1570475931964
     }
   ],
   "starting": 0,
@@ -96,6 +102,17 @@
     "highDensity": false,
     "pixelatedrender": false
   },
-  "fonts": [],
-  "startroom": "e7cc765e-c7b0-4eef-8b29-7d34a56a9820"
+  "fonts": [
+    {
+      "typefaceName": "big_noodle_titling",
+      "weight": 400,
+      "italic": false,
+      "uid": "9437d5b1-78cf-4bd3-b186-2fae0a0f2587",
+      "origname": "f9437d5b1-78cf-4bd3-b186-2fae0a0f2587.ttf",
+      "lastmod": 1570473913897
+    }
+  ],
+  "startroom": "4e69bc1f-57a3-4369-8aac-b6f96e3ab790",
+  "styletick": null,
+  "palette": []
 }

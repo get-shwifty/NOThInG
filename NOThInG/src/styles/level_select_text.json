@@ -1,0 +1,17 @@
+{
+  "name": "level_select_text",
+  "uid": "aaebe9e5-0e82-4997-9856-4b6bfdec5528",
+  "origname": "s4b6bfdec5528",
+  "font": {
+    "family": "BigNoodleTitling",
+    "size": 54,
+    "weight": 400,
+    "italic": false,
+    "wrap": true,
+    "wrapPosition": 90,
+    "halign": "center"
+  },
+  "fill": {
+    "type": "1"
+  }
+}
