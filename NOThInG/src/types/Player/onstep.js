@@ -6,7 +6,7 @@ if(ct.actions.Up.pressed) {
     this.MMovable.go(DIR.LEFT)
 } else if(ct.actions.Right.pressed) {
     this.MMovable.go(DIR.RIGHT);
-} else if(ct.actions.Take.pressed) {
+} else if(ct.actions.Take.pressed && !this.MMovable.moving) {
     let objInFront = utils.getNextDir(this, this.MMovable.dir);
     if(objInFront.MElement) {
         this.MContainer.addElement(objInFront);
@@ -18,7 +18,7 @@ if(ct.actions.Up.pressed) {
             }
         }
     }
-} else if(ct.actions.Drop.pressed) {
+} else if(ct.actions.Drop.pressed && !this.MMovable.moving) {
     this.MContainer.dropElement(this.MMovable.dir);
 }
 
