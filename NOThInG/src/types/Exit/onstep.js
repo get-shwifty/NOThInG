@@ -7,7 +7,7 @@ if (ct.actions.Debug_Next_Level.pressed) {
     background.scale.x = 40;
     background.scale.y = 40;
     background.depth = 0;
-    background.alpha = 0.8;
+    background.alpha = 0.9;
     
     ct.types.make("UI_Menu", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2));
     ct.types.make("UI_Next", ct.viewWidth / 2, 6 * 64 + ((((270 + 32) * ct.viewHeight / 900) - (270 + 32))));
