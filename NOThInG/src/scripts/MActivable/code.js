@@ -1,13 +1,13 @@
- const MActivable = (self,active) =>{
+ const MActivable = (self,active, dist) =>{
     MObstacle(self);
     self.MActivable = {
-        deactivate(dist) {
+        deactivate() {
             active = false;
             for(const obj of utils.getUnderDistance(self, dist, 'MOpenable')) {
                 obj.MOpenable.close();
             }
         },
-        activate(dist){
+        activate(){
             active = true;
             for(const obj of utils.getUnderDistance(self, dist, 'MOpenable')) {
                 obj.MOpenable.open();
@@ -17,6 +17,11 @@
             return active;
         }
     }
-    
-    
+    setTimeout(() => {
+        if (active) {
+            self.MActivable.activate();
+        } else {
+            self.MActivable.deactivate();
+        }
+    }, 0);
 } 

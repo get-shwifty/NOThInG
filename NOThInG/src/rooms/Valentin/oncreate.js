@@ -1,5 +1,5 @@
 let player = ct.types.list.Player[0];
 let box = ct.types.list.Box[0];
-box.MContainer.addElementByCst(EL.G);
-box.MContainer.addElementByCst(EL.G);
+box.MContainer.addElementByCst(EL.Th);
+box.MContainer.addElementByCst(EL.Th);
 

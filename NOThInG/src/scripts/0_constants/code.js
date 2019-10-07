@@ -21,5 +21,9 @@ const EL = {
     G:{
         tex: "El_G",
         type: "El_Anti_Gravity"
-    }
+    },
+    Th:{
+        tex: "El_Th",
+        type: "El_Thorium"
+    },
 };
