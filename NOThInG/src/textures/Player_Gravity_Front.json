@@ -2,7 +2,7 @@
   "name": "Player_Gravity_Front",
   "untill": 0,
   "grid": [
-    4,
+    1,
     1
   ],
   "axis": [
@@ -11,18 +11,18 @@
   ],
   "marginx": 0,
   "marginy": 0,
-  "imgWidth": 476,
+  "imgWidth": 119,
   "imgHeight": 119,
   "width": 119,
   "height": 119,
   "offx": 0,
   "offy": 0,
-  "origname": "ie86b400d-2534-48b0-b53d-8b17656bb0ef.png",
-  "source": "H:\\Documents\\Ludum_dare\\NOThInG\\Img\\character_gravity_front_1.png",
+  "origname": "ia5d3a5bd-4638-4e8b-bba5-bc4a03f915f8.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\Player_Gravity_Front.png",
   "shape": "rect",
   "left": 59,
   "right": 60,
   "top": 59,
   "bottom": 60,
-  "uid": "e86b400d-2534-48b0-b53d-8b17656bb0ef"
+  "uid": "a5d3a5bd-4638-4e8b-bba5-bc4a03f915f8"
 }
