@@ -10,6 +10,18 @@ const utils = {
         } else if(dir === DIR.RIGHT) {
             el.x += TILE_SIZE;
         }
+        return el;
+    },
+    getDirRotationDeg: (dir) => {
+        if(dir === DIR.UP) {
+            return 90;
+        } else if(dir === DIR.DOWN) {
+            return 270;
+        } else if(dir === DIR.LEFT) {
+            return 180;
+        } else if(dir === DIR.RIGHT) {
+            return 0;
+        }
     },
     distance: (a, b) => {
         return Math.abs(utils.dx(a, b)) + Math.abs(utils.dy(a, b));

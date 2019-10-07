@@ -11,3 +11,6 @@ if(ct.actions.Up.pressed) {
 } else if(ct.actions.Drop.pressed) {
 
 }
+
+this.MMovable.onStep();
+this.move();
