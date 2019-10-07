@@ -1,5 +1,4 @@
 MZone(this, 'all', el => {
-    console.log(!el.MMovable, !el.MMovable.isAntiGravity())
     if(el.MElement && el.MElement.getType() === EL.N) {
         this.kill = true;
         el.kill = true;
