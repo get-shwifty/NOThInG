@@ -35,7 +35,11 @@ const utils = {
         }
     },
     distance: (a, b) => {
-        return Math.abs(utils.dx(a, b)) + Math.abs(utils.dy(a, b));
+        try {
+            return Math.abs(utils.dx(a, b)) + Math.abs(utils.dy(a, b));
+        } catch(e) {
+            return Math.Infinity;
+        }
     },
     dx: (a, b) => {
         return Math.round((b.x - a.x) / TILE_SIZE);

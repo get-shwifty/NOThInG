@@ -1,1 +1,1 @@
-ct.sound.spawn("music") 
+ct.sound.spawn("music",{loop : true}) 

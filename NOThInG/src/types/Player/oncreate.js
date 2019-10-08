@@ -64,6 +64,12 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
 
 // *** Dying and Menu ***
 this.dyingMenu = () => {
+    if(this.dead)
+    {
+        return;
+    }
+    ct.sound.spawn("defeat")
+    
     this.pause = true;
     this.dead = true;
     PIXI.ticker.shared.speed = 0;

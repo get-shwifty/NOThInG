@@ -1,6 +1,4 @@
-MZone(this, [EL.G], (el) => {
-    console.log("trigger", this, el);
-    utils.spawn(EL.Th.type, this);
+MZone(this, [EL.N], el => {
     this.kill = true;
     el.kill = true;
 });
@@ -8,11 +6,11 @@ MZone(this, [EL.G], (el) => {
 setTimeout(() => {
     const player = getPlayer();
     player.MEvent.on('step', () => {
-        if(utils.distance(this, getPlayer()) === 0 && !player.MContainer.has(EL.N)) {
+        if(utils.distance(this, player) === 0 && !player.MContainer.has(EL.N)) {
             player.dyingMenu();
         }
     });
-});
+}, 0);
 
 this.animationSpeed = 0.12;
 this.play();

@@ -3,6 +3,9 @@
   "methods": [
     {
       "code": "keyboard.Escape"
+    },
+    {
+      "code": "keyboard.KeyM"
     }
   ]
 }

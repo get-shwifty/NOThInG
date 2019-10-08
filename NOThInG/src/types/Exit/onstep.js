@@ -1,4 +1,6 @@
-if (getPlayer() && utils.distance(this, getPlayer()) === 0) {
+if (getPlayer() && utils.distance(this, getPlayer()) === 0 && !this.screendisplayed) {
+    this.screendisplayed = true
+    ct.sound.spawn("victory")
     //this should be triggered by a collision with the player instead
     PIXI.ticker.shared.speed = 0;
     ct.pixiApp.ticker.speed = 0;
