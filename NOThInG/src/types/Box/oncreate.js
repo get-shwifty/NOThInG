@@ -1,6 +1,6 @@
 MMovable(this);
 
-MContainer(this, 3, 'list', 2);
+MContainer(this, 2, 'list', 2);
 
 this.MEvent.on('moveStart', () => {
     if(! this.MMovable.isAntiGravity()){
