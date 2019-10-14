@@ -8,6 +8,13 @@ this.menuManager = ct.types.make("UI_Menu_Manager");
 this.dead = false;
 this.win = false;
 
+// *** Dying ***
+this.dying = function() {
+    ct.sound.spawn("defeat")
+    this.dead = true;
+    this.menuManager.showLoseMenu();
+}
+
 // *** Oxygen ***
 this.MAX_OXYGEN = 4; 
 this.remainingOxygen = this.MAX_OXYGEN;
@@ -80,9 +87,7 @@ this.MEvent.on('moveEnd', () => {
     
     // *** Check if dying ***
     if(!this.dead && (this.remainingOxygen < 0 || this.currentRadioactivity > this.MAX_RADIOACTIVITY)) {
-        ct.sound.spawn("defeat")
-        this.dead = true;
-        this.menuManager.showLoseMenu();
+        this.dying();
     }
     
     if(this.MMovable.isAntiGravity()){
