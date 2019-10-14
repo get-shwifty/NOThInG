@@ -1,7 +1,7 @@
 {
   "name": "Menu",
-  "width": 900,
-  "height": 900,
+  "width": 2142,
+  "height": 1428,
   "backgrounds": [
     {
       "depth": -10,
@@ -9,28 +9,7 @@
       "extends": {}
     }
   ],
-  "copies": [
-    {
-      "x": 448,
-      "y": 192,
-      "uid": "f9170417-d55e-48bb-9523-82285aacba66"
-    },
-    {
-      "x": 448,
-      "y": 384,
-      "uid": "a1397620-99e2-48da-8fd1-026a03a26e6f"
-    },
-    {
-      "x": 448,
-      "y": 512,
-      "uid": "a3cefea4-ca78-42af-9ee4-dc19a00c979f"
-    },
-    {
-      "x": 448,
-      "y": 640,
-      "uid": "1eb42cf1-e093-4b6d-866c-ad57ef2cc824"
-    }
-  ],
+  "copies": [],
   "tiles": [
     {
       "depth": -10,

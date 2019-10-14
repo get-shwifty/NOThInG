@@ -18,7 +18,7 @@ this.showModalBackground = function() {
 };
 
 this.showStartingMenu = function () {
-    if (uiElements.length > 0) {
+    if (this.uiElements.length > 0) {
         this.clearMenu();
     }
     this.showModalBackground();
