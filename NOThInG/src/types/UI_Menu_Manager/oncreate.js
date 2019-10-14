@@ -13,59 +13,71 @@ this.uiElements = [];
 // background.depth = 0;
 // background.alpha = 0.9;
 
+this.showModalBackground = function() {
+    this.uiElements.push(ct.types.make("ModalBackground"));
+};
+
 this.showStartingMenu = function () {
     if (uiElements.length > 0) {
         this.clearMenu();
     }
+    this.showModalBackground();
+    this.uiElements[0].tint = 0x373737;
     this.uiElements.push(ct.types.make("UI_Menu", POS.title.x, POS.title.y));
     this.uiElements.push(ct.types.make("UI_Start", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
     this.uiElements.push(ct.types.make("UI_Exit", POS.thirdB.x, POS.thirdB.y));
-    PIXI.ticker.shared.speed = 0;
-    ct.pixiApp.ticker.speed = 0;
+    // PIXI.ticker.shared.speed = 0;
+    // ct.pixiApp.ticker.speed = 0;
 };
 
 this.showGameMenu = function () {
-    if (uiElements.length > 0) {
+    if (this.uiElements.length > 0) {
         this.clearMenu();
     }
+    this.showModalBackground();
+    this.uiElements[0].tint = 0x373737;
     this.uiElements.push(ct.types.make("UI_Menu", POS.title.x, POS.title.y));
     this.uiElements.push(ct.types.make("UI_Restart", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
-    this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
-    PIXI.ticker.shared.speed = 0;
-    ct.pixiApp.ticker.speed = 0;
+    this.uiElements.push(ct.types.make("UI_Menu_Button", POS.thirdB.x, POS.thirdB.y));
+    // PIXI.ticker.shared.speed = 0;
+    // ct.pixiApp.ticker.speed = 0;
 };
 
 this.showWinMenu = function () {
-    if (uiElements.length > 0) {
+    if (this.uiElements.length > 0) {
         this.clearMenu();
     }
+    this.showModalBackground();
+    this.uiElements[0].tint = 0x224f22;
     this.uiElements.push(ct.types.make("UI_Win", POS.title.x, POS.title.y));
     this.uiElements.push(ct.types.make("UI_Next", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
-    this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
-    PIXI.ticker.shared.speed = 0;
-    ct.pixiApp.ticker.speed = 0;
+    this.uiElements.push(ct.types.make("UI_Menu_Button", POS.thirdB.x, POS.thirdB.y));
+    // PIXI.ticker.shared.speed = 0;
+    // ct.pixiApp.ticker.speed = 0;
 };
 
 this.showLoseMenu = function () {
-    if (uiElements.length > 0) {
+    if (this.uiElements.length > 0) {
         this.clearMenu();
     }
+    this.showModalBackground();
+    this.uiElements[0].tint = 0x511313;
     this.uiElements.push(ct.types.make("UI_Lose", POS.title.x, POS.title.y));
     this.uiElements.push(ct.types.make("UI_Restart", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
-    this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
-    PIXI.ticker.shared.speed = 0;
-    ct.pixiApp.ticker.speed = 0;
+    this.uiElements.push(ct.types.make("UI_Menu_Button", POS.thirdB.x, POS.thirdB.y));
+    // PIXI.ticker.shared.speed = 0;
+    // ct.pixiApp.ticker.speed = 0;
 };
 
 this.clearMenu = function () {
-    this.uiElements.foreach(function (el) {
+    this.uiElements.forEach(function (el) {
         el.kill = true;
     });
-    uiElements = [];
-    PIXI.ticker.shared.speed = 1;
-    ct.pixiApp.ticker.speed = 1;
+    this.uiElements = [];
+    // PIXI.ticker.shared.speed = 1;
+    // ct.pixiApp.ticker.speed = 1;
 };

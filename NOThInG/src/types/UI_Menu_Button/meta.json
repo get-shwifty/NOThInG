@@ -1,6 +1,6 @@
 {
   "name": "UI_Menu_Button",
-  "depth": 0,
+  "depth": 10,
   "uid": "7a141dfa-2045-4640-9763-01bde352d277",
   "texture": "6146ff5e-5c7e-4b69-b36c-1c0cfa4fca4d",
   "extends": {}

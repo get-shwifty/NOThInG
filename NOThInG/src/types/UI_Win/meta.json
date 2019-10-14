@@ -1,6 +1,6 @@
 {
   "name": "UI_Win",
-  "depth": 0,
+  "depth": 10,
   "uid": "b297c276-2d45-4adf-9920-b73f58815dd0",
   "texture": "ab51ccfc-4804-4712-9755-83667247d816",
   "extends": {}

@@ -1,0 +1,28 @@
+{
+  "name": "modal_background",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    0,
+    0
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 100,
+  "imgHeight": 100,
+  "width": 100,
+  "height": 100,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ib847ccbf-38c8-4623-b8ee-377d297a8572",
+  "source": "E:\\GitHub\\NOThInG\\NOThInG\\Img\\modal_background.png",
+  "shape": "rect",
+  "left": 0,
+  "right": 1,
+  "top": 0,
+  "bottom": 1,
+  "uid": "b847ccbf-38c8-4623-b8ee-377d297a8572"
+}

@@ -1,6 +1,6 @@
 {
   "name": "UI_Lose",
-  "depth": 0,
+  "depth": 10,
   "uid": "c15e874f-e6d1-4441-acaa-d2fc3e93e08c",
   "texture": "a34932ef-5974-4fb6-a5bf-aefdf7c25206",
   "extends": {}

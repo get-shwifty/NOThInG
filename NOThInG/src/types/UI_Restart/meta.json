@@ -1,6 +1,6 @@
 {
   "name": "UI_Restart",
-  "depth": 0,
+  "depth": 10,
   "uid": "6b283d37-fab2-4449-8ab7-ce96b7bb903d",
   "texture": "beaea6d2-f420-45b6-8989-29f78a48e5c3",
   "extends": {}
