@@ -7,6 +7,12 @@ const POS = {
 
 this.uiElements = [];
 
+// let background = ct.types.make("Wall", ct.viewWidth / 2, ct.viewHeight/2);
+// background.scale.x = 40;
+// background.scale.y = 40;
+// background.depth = 0;
+// background.alpha = 0.9;
+
 this.showStartingMenu = function () {
     if (uiElements.length > 0) {
         this.clearMenu();
@@ -15,6 +21,8 @@ this.showStartingMenu = function () {
     this.uiElements.push(ct.types.make("UI_Start", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
     this.uiElements.push(ct.types.make("UI_Exit", POS.thirdB.x, POS.thirdB.y));
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
 };
 
 this.showGameMenu = function () {
@@ -25,6 +33,8 @@ this.showGameMenu = function () {
     this.uiElements.push(ct.types.make("UI_Restart", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
     this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
 };
 
 this.showWinMenu = function () {
@@ -35,6 +45,8 @@ this.showWinMenu = function () {
     this.uiElements.push(ct.types.make("UI_Next", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
     this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
 };
 
 this.showLoseMenu = function () {
@@ -45,6 +57,8 @@ this.showLoseMenu = function () {
     this.uiElements.push(ct.types.make("UI_Restart", POS.firstB.x, POS.firstB.y));
     this.uiElements.push(ct.types.make("UI_Select", POS.secondB.x, POS.secondB.y));
     this.uiElements.push(ct.types.make("UI_Menu", POS.thirdB.x, POS.thirdB.y));
+    PIXI.ticker.shared.speed = 0;
+    ct.pixiApp.ticker.speed = 0;
 };
 
 this.clearMenu = function () {
@@ -52,4 +66,6 @@ this.clearMenu = function () {
         el.kill = true;
     });
     uiElements = [];
+    PIXI.ticker.shared.speed = 1;
+    ct.pixiApp.ticker.speed = 1;
 };

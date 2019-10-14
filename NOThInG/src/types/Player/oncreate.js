@@ -4,9 +4,10 @@ MContainer(this, 2, 'list');
 this.body.tex = -1;
 
 // *** Pausing and Menu ***
-this.pause = false;
+this.menuManager = ct.types.make("UI_Menu_Manager");
+this.menu = false;
 this.dead = false;
-this.arrMenu = [];
+this.win = false;
 
 // *** Oxygen ***
 this.MAX_OXYGEN = 4; 
@@ -62,31 +63,6 @@ this.MEvent.on("elementDropped", (el, remainingEls) => {
     }
 });
 
-// *** Dying and Menu ***
-this.dyingMenu = () => {
-    if(this.dead)
-    {
-        return;
-    }
-    ct.sound.spawn("defeat")
-    
-    this.pause = true;
-    this.dead = true;
-    PIXI.ticker.shared.speed = 0;
-    ct.pixiApp.ticker.speed = 0;
-    
-    let background = ct.types.make("Wall", ct.viewWidth / 2, ct.viewHeight/2);
-    background.scale.x = 40;
-    background.scale.y = 40;
-    background.depth = 0;
-    background.alpha = 0.9;
-    
-    ct.types.make("UI_Lose", ct.viewWidth / 2, 3 * 64 + (((270 * ct.viewHeight / 900) - 270) / 2));
-    ct.types.make("UI_Restart", ct.viewWidth / 2, 6 * 64 + ((((270 + 32) * ct.viewHeight / 900) - (270 + 32))));
-    ct.types.make("UI_Select", ct.viewWidth / 2, 8 * 64 + ((((270 + 32 + 64) * ct.viewHeight / 900) - (270 + 32 + 64))));
-    ct.types.make("UI_Menu_Button", ct.viewWidth / 2, 10 * 64 + ((((270 + 5 * 32) * ct.viewHeight / 900) - (270 + 5 * 32))));
-};
-
 // *** MEvent : moving ***
 this.MEvent.on('moveStart', () => {
     if(!this.MMovable.isAntiGravity()){
@@ -102,16 +78,12 @@ this.MEvent.on('moveEnd', () => {
     if(this.currentRadioactivity) {
         this.radioactivityLabel.visible = true;
     }
-    // console.log("Radioactivity: ", this.currentRadioactivity);
-    // console.log("Oxygen: ", this.remainingOxygen);
     
-    if(this.remainingOxygen < 0) {
-        this.dyingMenu();
-        // console.log("DYYYYYYYYING, breathing is not an option !!!");
-    }
-    if(this.currentRadioactivity > this.MAX_RADIOACTIVITY) {
-        this.dyingMenu();
-        // console.log("DYYYYYYYYING, Tchernobyl got you !!!");
+    // *** Check if dying ***
+    if(!this.dead && (this.remainingOxygen < 0 || this.currentRadioactivity > this.MAX_RADIOACTIVITY)) {
+        ct.sound.spawn("defeat")
+        this.dead = true;
+        this.menuManager.showLoseMenu();
     }
     
     if(this.MMovable.isAntiGravity()){

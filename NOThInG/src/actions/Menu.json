@@ -1,5 +1,5 @@
 {
-  "name": "Escape",
+  "name": "Menu",
   "methods": [
     {
       "code": "keyboard.Escape"
