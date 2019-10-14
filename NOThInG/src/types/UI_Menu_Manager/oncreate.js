@@ -6,12 +6,9 @@ const POS = {
 };
 
 this.uiElements = [];
-
-// let background = ct.types.make("Wall", ct.viewWidth / 2, ct.viewHeight/2);
-// background.scale.x = 40;
-// background.scale.y = 40;
-// background.depth = 0;
-// background.alpha = 0.9;
+this.menuOn = function() {
+    return this.uiElements.length > 0;
+}
 
 this.showModalBackground = function() {
     this.uiElements.push(ct.types.make("ModalBackground"));

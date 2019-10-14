@@ -1,4 +1,4 @@
-if (!this.dead && !this.win && !this.menu) {
+if (!this.menuManager.menuOn()) {
     if(ct.actions.Up.pressed) {
         this.MMovable.go(DIR.UP);
     } else if(ct.actions.Down.pressed) {
@@ -32,11 +32,9 @@ if (ct.actions.Restart.pressed) {
 }
 
 if (!this.dead && !this.win && ct.actions.Menu.pressed) {
-    if (!this.menu) {
-        this.menu = true;
+    if (!this.menuManager.menuOn()) {
         this.menuManager.showGameMenu();
     } else {
-        this.menu = false;
         this.menuManager.clearMenu();
     }
 }

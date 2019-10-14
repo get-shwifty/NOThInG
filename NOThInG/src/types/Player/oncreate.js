@@ -5,7 +5,6 @@ this.body.tex = -1;
 
 // *** Pausing and Menu ***
 this.menuManager = ct.types.make("UI_Menu_Manager");
-this.menu = false;
 this.dead = false;
 this.win = false;
 
