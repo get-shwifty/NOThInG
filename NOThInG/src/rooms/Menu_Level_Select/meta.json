@@ -9,13 +9,7 @@
       "extends": {}
     }
   ],
-  "copies": [
-    {
-      "x": 448,
-      "y": 192,
-      "uid": "f9170417-d55e-48bb-9523-82285aacba66"
-    }
-  ],
+  "copies": [],
   "tiles": [
     {
       "depth": -10,
