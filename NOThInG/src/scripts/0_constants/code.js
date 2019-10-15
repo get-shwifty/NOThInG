@@ -45,10 +45,3 @@ const SIGNAL = {
 };
 
 const NON_LEVEL_ROOMS = ["Menu", "Menu_Level_Select", "Final_Screen", "Alexis", "Marie-Andrea"];
-
-const SPLASH_POS = {
-    "UI_Menu": { x : 0, y : 300},
-    "First_Box": { x : 0, y : 450},
-    "Second_Box": { x : 0, y : 540},
-    "Third_Box": { x : 0, y : 630},
-};
