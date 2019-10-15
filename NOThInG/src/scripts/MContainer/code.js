@@ -31,7 +31,9 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
                 } else {
                     console.log("No MEvent Mixins, can't emit message 'elementTaken'");
                 }
-                
+                if (other.MElement.getType().type === EL.G.type) {
+                    self.depth = 1;
+                }
                 self.MContainer.updateView();
                 return true;
             }
@@ -66,14 +68,16 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
                 } else {
                     console.log("No MEvent Mixins, can't emit message 'elementTaken'");
                 }
-                
+                if (!self.MContainer.has(EL.G)) {
+                    self.depth = 0;
+                }
                 self.MContainer.updateView();
                 return obj;
             }
             return null;
         },
         dropElement(dir) {
-            if (objectsTypes.length == 0) {
+            if (objectsTypes.length === 0) {
                 return false;
             }
             
