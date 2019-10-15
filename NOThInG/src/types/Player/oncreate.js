@@ -2,9 +2,8 @@ MMovable(this, false, true);
 MContainer(this, 2, 'list');
 
 this.body.tex = -1;
-
 // *** Pausing and Menu ***
-this.menuManager = ct.types.make("UI_Menu_Manager");
+ct.room.menuManager = ct.types.make("UI_Menu_Manager");
 this.dead = false;
 this.win = false;
 
@@ -12,7 +11,7 @@ this.win = false;
 this.dying = function() {
     ct.sound.spawn("defeat")
     this.dead = true;
-    this.menuManager.showLoseMenu();
+    ct.room.menuManager.showLoseMenu();
 }
 
 // *** Oxygen ***

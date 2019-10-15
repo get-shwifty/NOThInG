@@ -1,5 +1,5 @@
-if (getPlayer() && utils.distance(this, getPlayer()) === 0 && !getPlayer().menuManager.menuOn()) {
+if (getPlayer() && utils.distance(this, getPlayer()) === 0 && !ct.room.menuManager.menuOn()) {
     ct.sound.spawn("victory");
     getPlayer().win = true;
-    getPlayer().menuManager.showWinMenu();
+    ct.room.menuManager.showWinMenu();
 }

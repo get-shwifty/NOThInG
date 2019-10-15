@@ -16,7 +16,8 @@ const POS = {
 this.uiElements = [];
 this.menuOn = function() {
     return this.uiElements.length > 0;
-}
+};
+this.gameMenuOn = false; 
 
 this.showModalBackground = function() {
     this.uiElements.push(ct.types.make("ModalBackground"));
@@ -63,6 +64,7 @@ this.showGameMenu = function () {
     if (this.uiElements.length > 0) {
         this.clearMenu();
     }
+    this.gameMenuOn = true;
     this.showModalBackground();
     this.uiElements[0].tint = 0x373737;
     this.uiElements.push(this.scaling(ct.types.make("UI_Menu", POS.title.x, POS.title.y)));
@@ -106,6 +108,7 @@ this.clearMenu = function () {
         el.kill = true;
     });
     this.uiElements = [];
+    this.gameMenuOn = false;
     // PIXI.ticker.shared.speed = 1;
     // ct.pixiApp.ticker.speed = 1;
 };

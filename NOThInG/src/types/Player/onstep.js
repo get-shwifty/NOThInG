@@ -1,4 +1,4 @@
-if (!this.menuManager.menuOn()) {
+if (!ct.room.menuManager.menuOn()) {
     if(ct.actions.Up.pressed) {
         this.MMovable.go(DIR.UP);
     } else if(ct.actions.Down.pressed) {
@@ -23,18 +23,5 @@ if (!this.menuManager.menuOn()) {
         }
     } else if(ct.actions.Drop.pressed && !this.MMovable.moving) {
         this.MContainer.dropElement(this.MMovable.dir);
-    }
-}
-
-if (ct.actions.Restart.pressed) {
-    this.menuManager.clearMenu();
-    ct.rooms.switch(ct.room.name);
-}
-
-if (!this.dead && !this.win && ct.actions.Menu.pressed) {
-    if (!this.menuManager.menuOn()) {
-        this.menuManager.showGameMenu();
-    } else {
-        this.menuManager.clearMenu();
     }
 }
