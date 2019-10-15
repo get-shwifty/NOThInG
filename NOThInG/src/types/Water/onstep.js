@@ -7,9 +7,6 @@ for(const el of utils.getUnderDistance(this, 0)) {
         utils.spawn('Ice', this);
     } else if((!el.MMovable || !el.MMovable.isAntiGravity()) && el.type !== 'Water' && el.type && el.type.indexOf('UI') < 0) {
         ct.sound.spawn('water_splash');
-        if(el === player) {
-            getPlayer().dying();
-        }
         el.kill = true;
     }
 }

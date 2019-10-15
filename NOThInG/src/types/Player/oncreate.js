@@ -4,15 +4,6 @@ MContainer(this, 2, 'list');
 this.body.tex = -1;
 // *** Pausing and Menu ***
 ct.room.menuManager = ct.types.make("UI_Menu_Manager");
-this.dead = false;
-this.win = false;
-
-// *** Dying ***
-this.dying = function() {
-    ct.sound.spawn("defeat")
-    this.dead = true;
-    ct.room.menuManager.showLoseMenu();
-}
 
 // *** Oxygen ***
 this.MAX_OXYGEN = 4; 
@@ -86,7 +77,7 @@ this.MEvent.on('moveEnd', () => {
     
     // *** Check if dying ***
     if(!this.dead && (this.remainingOxygen < 0 || this.currentRadioactivity > this.MAX_RADIOACTIVITY)) {
-        this.dying();
+        this.kill = true;
     }
     
     if(this.MMovable.isAntiGravity()){
