@@ -43,6 +43,21 @@ const MContainer = (self, maxSlots, elementsDisplayTemplate='default', shadowSca
             }
             return false;
         },
+        takeElement(dir) {
+            let elInFront = utils.getNextDir(self, dir, "MElement");
+            if(elInFront) {
+                this.addElement(elInFront);
+            }
+            contInFront = utils.getNextDir(self, dir, "MContainer");
+            if (contInFront) {
+                if (this.hasFreeSlot()) {
+                    let elDrop = contInFront.MContainer.popElement();
+                    if (elDrop) {
+                        this.addElement(elDrop);
+                    }
+                }
+            }
+        },
         popElement() {
             if (objectsTypes.length > 0) {
                 let obj = objectsTypes.pop();
