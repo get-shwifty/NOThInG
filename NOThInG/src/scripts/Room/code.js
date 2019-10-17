@@ -1,4 +1,10 @@
-
+const roomOnCreate = () => {
+    for(const el of ct.room.children){
+        if(el.MTile){
+            el.MTile.drawSprite()
+        }
+    }
+}
 const roomOnStep = () => {
     for(const el of ct.room.children) {
         if(el.MMovable) {
