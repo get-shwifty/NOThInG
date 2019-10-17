@@ -1,0 +1,28 @@
+{
+  "name": "water_main",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "ia1785588-8f88-46ba-822a-a91f5fa0500b.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\water_main.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "a1785588-8f88-46ba-822a-a91f5fa0500b"
+}

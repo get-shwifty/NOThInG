@@ -1,0 +1,28 @@
+{
+  "name": "water_left",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i847c486d-f791-4b26-b1fa-2daa24dc3e8c.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\water_left.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "847c486d-f791-4b26-b1fa-2daa24dc3e8c"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "watter_bottom_left",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    59,
+    59
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 119,
+  "imgHeight": 119,
+  "width": 119,
+  "height": 119,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i86fb8a96-7169-49ff-8a3d-ba9080fa11a2.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\watter_bottom_left.png",
+  "shape": "rect",
+  "left": 59,
+  "right": 60,
+  "top": 59,
+  "bottom": 60,
+  "uid": "86fb8a96-7169-49ff-8a3d-ba9080fa11a2"
+}
