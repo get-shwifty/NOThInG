@@ -1,0 +1,1 @@
+this.emitter.update(ct.delta/60);

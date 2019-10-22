@@ -1,0 +1,28 @@
+{
+  "name": "electricity",
+  "untill": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "axis": [
+    35,
+    84
+  ],
+  "marginx": 0,
+  "marginy": 0,
+  "imgWidth": 71,
+  "imgHeight": 168,
+  "width": 71,
+  "height": 168,
+  "offx": 0,
+  "offy": 0,
+  "origname": "i73af7e5a-19af-4a17-8ea4-91ab78c9c28e.png",
+  "source": "C:\\Users\\Orion\\Documents\\Projets\\NOThInG\\Img\\electricity.png",
+  "shape": "rect",
+  "left": 35,
+  "right": 36,
+  "top": 84,
+  "bottom": 84,
+  "uid": "73af7e5a-19af-4a17-8ea4-91ab78c9c28e"
+}
